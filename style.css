@@ -86,6 +86,7 @@
 	- Stretched Layout
 	- Page Transitions
 	- Youtube Video Backgrounds
+	- Table
 
 ---------------------------------------------------------------- */
 
@@ -16777,4 +16778,21 @@ label.checkbox { padding-left: 20px; }
   color: #fff;
   background-color: #13c992;
   border-color: #13c992;
+}
+
+/*TABLA*/
+
+.textonormal{
+	color: #555;
+	font-size: 13px;
+	font-family: 'Lato-Regular'!important;
+}
+
+.tabla{
+	border-top: 1px #eee;
+	border-bottom: 1px #eee;
+}
+
+.linea{
+	border-bottom: 1px solid #333333;
 }
