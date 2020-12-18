@@ -827,6 +827,9 @@ a.h-text-dark:hover {
 	border-width: 2rem;
 }
 
+.bg-blue{
+	background-color: #006be3
+}
 
 /* ----------------------------------------------------------------
 	Gradient Utility Classes
@@ -16780,6 +16783,41 @@ label.checkbox { padding-left: 20px; }
   border-color: #13c992;
 }
 
+.btnVerdeR{
+  border:1.4px solid white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0.5rem 1.5rem;	
+  color: #fff;
+  background-color: #13c992;
+  border-color: #13c992;
+  font-size: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btnAzul{	
+  border:1.4px solid white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0.5rem 2rem;	
+  color: #fff;
+  background-color: #006be3;
+  border-color: #006be3;
+}
+
+.btnNaranja{
+  border:1.4px solid white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0.5rem 2rem;	
+  color: #fff;
+  background-color: #fbb040;
+  border-color: #fbb040;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px
+}
 /*TABLA*/
 
 .textonormal{
