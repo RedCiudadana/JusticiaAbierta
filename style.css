@@ -3673,12 +3673,10 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	display: block;
 	line-height: 22px;
 	padding: 14px 5px;
-	color: black;
 	font-weight: 700;
 	font-size: 0.8125rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Roboto bold', sans-serif;
 }
 
 .menu-link span {
@@ -3697,7 +3695,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 
 .menu-item:hover > .menu-link,
 .menu-item.current > .menu-link {
-	color: orange;
+	color: #006be3;
 }
 
 .menu-item.sub-menu > .menu-link > div { }
@@ -3720,14 +3718,12 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	padding: 0px 5px;
 	font-size: 0.75rem;
 	font-weight: 400;
-	color: #666;
 	letter-spacing: 0;
-	font-family: 'Roboto', sans-serif;
 }
 
 .sub-menu-container .menu-item:hover > .menu-link {
 	font-weight: 700;
-	color: orange;
+	color: #006be3;
 	display: inline-block;
 }
 
@@ -4047,7 +4043,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	.sub-menu-container .menu-item:hover > .menu-link {
 		background-color: #F9F9F9;
 		padding-left: 18px;
-		color: orange;
+		color: #006be3;
 	}
 
 	.menu-link div > i.icon-angle-down {
