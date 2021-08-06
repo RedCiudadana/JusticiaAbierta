@@ -16862,3 +16862,10 @@ label.checkbox { padding-left: 20px; }
     }
 }
 
+.atab:hover{
+	color: #016be3!important;
+}
+
+.w3-border-green, .w3-hover-border-green:hover{
+	border-color: #13c992!important;
+}
