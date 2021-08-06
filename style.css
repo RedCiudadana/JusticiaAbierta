@@ -8991,13 +8991,20 @@ td.actions {
 	padding: 8px 22px;
 	font-size: 0.875rem;
 	line-height: 24px;
-	background-color: #1ABC9C;
+
 	color: #FFF;
-	font-weight: 700;
-	text-transform: uppercase;
+
 	letter-spacing: 1px;
 	border: none;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+
+	border: none;
+
+	margin: 0!important;
+	padding: 0!important;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 }
 
 body:not(.device-touch) .button {
@@ -16847,5 +16854,11 @@ label.checkbox { padding-left: 20px; }
 	text-align: center;
 	margin:0px auto;
 	padding:3%
+}
+
+@media only screen and (max-width: 668px) {
+    #btnP {
+        display: none;
+    }
 }
 
