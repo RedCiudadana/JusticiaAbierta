@@ -16873,3 +16873,18 @@ label.checkbox { padding-left: 20px; }
 .foot:hover{
 	color: #fff!important;
 }
+
+.cuadros{
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cuadros2{
+	justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+    
