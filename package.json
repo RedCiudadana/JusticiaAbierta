@@ -20,5 +20,8 @@
   "homepage": "https://github.com/RedCiudadana/JusticiaAbierta#readme",
   "dependencies": {
     "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
   }
 }
