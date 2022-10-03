@@ -156,11 +156,10 @@ h3,
 h4,
 h5,
 h6 {
-
   color: #233f4d;
   margin-top: 0px;
   font-style: normal;
-
+  font-family: 'Lato-Bold', sans-serif;
   text-transform: normal;
   line-height: 1; }
 
