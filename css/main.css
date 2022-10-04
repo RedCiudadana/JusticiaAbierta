@@ -100,7 +100,11 @@ body {
 
   font-weight: normal;
   font-style: normal;
-  color: #748188; }
+  color: #748188; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .img, img {
   max-width: 100%;
