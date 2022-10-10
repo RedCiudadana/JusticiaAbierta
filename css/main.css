@@ -2965,7 +2965,7 @@ label {
   -o-transition: .3s;
   transition: .3s;
   vertical-align: middle;
-  background: #ffc226;
+  background: #13ca92;
   border-radius: 5px;
   border: none; }
   .btn i {
@@ -6094,4 +6094,53 @@ button.mfp-close, button.mfp-arrow{
 .preloader img.jump {
   max-height: 100px;
   max-width: 100px;
+}
+
+
+#goToTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 25px;
+	font-weight: 800;
+	border: none;
+	outline: none;
+	background-color: #13ca92;
+	color: white;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 4px;
+	transition: 0.5s;
+	border: 0.5px solid #fff;
+}
+
+#goToTop:hover{
+	background-color: #fff;
+  color: #016be3;
+  border-color: #016be3;
+}
+
+.height-86{
+  height: 86px;
+}
+
+/*Form de contato*/
+
+
+.contact_form{
+  width: 100%;
+}
+
+.contact_form input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#message{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
 }
