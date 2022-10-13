@@ -53,3 +53,33 @@ permalink: contacto/index.html
     </div>
 
 {% endblock %}
+
+{% block body_javascripts %}
+    <script>
+        function postToForm() {
+            var field1 = $("#name").val();
+            var field2 = $("#email").val();
+            var field3 = $("#affair").val();
+            var field4 = $("#message").val();
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSe2DNIWZVQugZ_G-rQCzO9EKpWr66ZXe8rbBBHtKYduKIeXyQ/formResponse?",
+      data: {"entry.1064235632": field1, "entry.1330832081": field2, "entry.1233483376": field3, "entry.608682247": field4},
+                type: "POST",
+                dataType: "xml",
+                success: function(d)
+      {
+      },
+      error: function(x, y, z)
+        {
+
+          $('#success-msg').show();
+          $('#form').hide();
+          
+        }
+            });
+    return false;
+        }
+    </script>
+
+{% endblock %}
