@@ -194,7 +194,7 @@ a {
 
 a:hover { color: #222; }
 
-a img { border: none; height: 60px;}
+a img { border: none;}
 
 img { max-width: 100%; }
 
@@ -250,6 +250,11 @@ h1,h2,h3,h4,h5,h6,p{
 
 p #pB{
 	color: #FFF;
+	
+}
+
+p{
+	font-family: 'Lato-Regular', sans-serif!important;
 }
 
 /*----------- CAJA ----------- */
@@ -2763,7 +2768,7 @@ img.lazy:not([src]) {
 	width: 100%;
 	margin: 60px 0;
 	padding: 60px 0;
-	background-color: #F9F9F9;
+	background-color: #FFF;
 	overflow: hidden;
 }
 
@@ -5852,11 +5857,11 @@ body:not(.stretched) .slider-parallax .slider-inner { left: auto; }
 
 
 /* Swiper Slider
------------------------------------------------------------------*/
+-----------------------------------------------------------------
 $('.carousel').carousel({
   interval: 2000
 })
-
+*/
 
 .swiper_wrapper {
 	position: relative;
@@ -16887,4 +16892,23 @@ label.checkbox { padding-left: 20px; }
     flex-direction: column;
 }
 
-    
+.logo{
+	padding-left: 7%;
+}
+
+.redes_header{
+	display: flex;
+}
+
+@media (max-width: 700px) {
+	.logo{
+		display: block!important;
+		padding-left: 10px;
+		max-width: 80%;
+	}
+	
+
+	.redes_header > *{
+		margin-right: 10px;
+	}
+}

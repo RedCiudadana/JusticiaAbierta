@@ -204,8 +204,8 @@ li {
 p {
   font-size: 15px;
   font-weight: normal;
-  line-height: 28px;
-  color: #748188;
+  line-height: 22px;
+  color: #666666!important;
   margin-bottom: 15px; }
 
 hr {
@@ -215,10 +215,12 @@ hr {
   padding: 0; }
 
 label {
-  color: #374455;
+  color: #666666;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400; 
+  text-transform:none;
+}
 
 *::-moz-selection {
   background: #233f4d;
@@ -6139,8 +6141,359 @@ button.mfp-close, button.mfp-arrow{
   padding: 10px;
 }
 
+.contact_form textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.contact_form select{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.propuestas_form{
+  width: 100%;
+}
+
+.propuestas_form input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.propuestas_form textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.propuestas_form select{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.propuestas_form select option{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+optgroup{
+  font-size: 10px;
+}
+
 #message{
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
+}
+
+.bg-image{
+  background-image:url('/assets/02_SLIDER/SLIDER-07.png')
+}
+
+@media only screen and (max-width: 600px)  {
+  .bg-image{
+    background-image:url('/assets/02_SLIDER/SLIDER-08.png')
+  }
+}
+
+.filtros{
+  background-color: #13C992;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px 10px;
+  margin: 10px 20px 10px 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  transition: 0.5s;
+}
+
+.filtros:hover{
+  background-color: #006BE3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cuadro_propuesta{
+  border-radius: 10px;
+  border: 2px solid #006BE3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cuadro_propuesta::before{
+  position:absolute;
+  top:3px;
+  right:-7px;
+  display: block;
+  box-sizing:border-box;
+  content:"Encuentro Ciudadano";
+  text-transform:uppercase;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  text-align:center;
+  font-weight: 700;
+  color: #fff;
+  background: transparent; 
+  height:0;
+  width:150px;                      
+  border:30px solid transparent;
+  border-bottom:30px solid #006BE3;
+  line-height:14px;
+  transform: rotate(45deg);
+}
+
+.cuadro_propuesta .tags{
+  padding: 5%;
+}
+
+.cuadro_propuesta .numero_propuesta{
+  padding-top: 5%;
+  padding-left: 5%;
+  text-transform: uppercase;
+}
+
+.cuadro_propuesta .numero_propuesta p{
+  color: #92939E!important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cuadro_propuesta .contenido{
+  padding: 0 5% 5% 5%;
+}
+
+.cuadro_propuesta .contenido p{
+  color: #92939E!important;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.cuadro_propuesta .bottom{
+  padding: 5%;
+  background-color: #006BE3;
+  border-color: #006BE3;
+  width: 101%;
+  margin-left: -0.5%;
+  margin-bottom: -0.5%;
+  border-bottom-left-radius: 10px;;
+  border-bottom-right-radius: 10px;;
+}
+
+.cuadro_propuesta .bottom .candidaturas{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro_propuesta .bottom .candidaturas h4{
+  color: #fff!important;
+  margin-right: 6px;
+}
+
+.cuadro_propuesta .bottom .ciudadanos{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro_propuesta .bottom .ciudadanos h4{
+  color: #fff!important;
+  margin-right: 6px;
+}
+
+.cuadro_propuesta .bottom .botones_finales{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cuadro_propuesta .bottom .botones_finales .apoyar{
+  background-color: #13C992;
+  color: #fff!important;
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.cuadro_propuesta .bottom .botones_finales .apoyar:hover{
+  background-color: #fff;
+  color: #13C992!important;
+}
+
+.cuadro_propuesta .bottom .botones_finales .vermas{
+  background-color: #025fa5;
+  color: #fff!important;
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.cuadro_propuesta .bottom .botones_finales .vermas:hover{
+  background-color: #fff;
+  color: #006BE3!important;
+}
+
+.cuadro_propuesta2{
+  border-radius: 10px;
+  border: 2px solid #006BE3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cuadro_propuesta2 .tags{
+  padding: 5%;
+}
+
+.cuadro_propuesta2 .numero_propuesta{
+  padding-top: 5%;
+  padding-left: 5%;
+  text-transform: uppercase;
+}
+
+.cuadro_propuesta2 .numero_propuesta p{
+  color: #92939E!important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cuadro_propuesta2 .contenido{
+  padding: 0 5% 5% 5%;
+}
+
+.cuadro_propuesta2 .contenido p{
+  color: #92939E!important;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.cuadro_propuesta2 .bottom{
+  padding: 5%;
+  background-color: #006BE3;
+  border-color: #006BE3;
+  width: 101%;
+  margin-left: -0.5%;
+  margin-bottom: -0.5%;
+  border-bottom-left-radius: 10px;;
+  border-bottom-right-radius: 10px;;
+}
+
+.cuadro_propuesta2 .bottom .candidaturas{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro_propuesta2 .bottom .candidaturas h4{
+  color: #fff!important;
+  margin-right: 6px;
+}
+
+.cuadro_propuesta2 .bottom .ciudadanos{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro_propuesta2 .bottom .ciudadanos h4{
+  color: #fff!important;
+  margin-right: 6px;
+}
+
+.cuadro_propuesta2 .bottom .botones_finales{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cuadro_propuesta2 .bottom .botones_finales .apoyar{
+  background-color: #13C992;
+  color: #fff!important;
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.cuadro_propuesta2 .bottom .botones_finales .apoyar:hover{
+  background-color: #fff;
+  color: #13C992!important;
+}
+
+.cuadro_propuesta2 .bottom .botones_finales .vermas{
+  background-color: #025fa5;
+  color: #fff!important;
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.cuadro_propuesta2 .bottom .botones_finales .vermas:hover{
+  background-color: #fff;
+  color: #006BE3!important;
+}
+
+.ver_todo{
+  background-color: #13C992;
+  color: #fff!important;
+  border-radius: 10% / 50%;
+  padding: 10px 15px;
+  transition: 0.5s;
+}
+
+.ver_todo:hover{
+  background-color: #006BE3;
+}
+
+.linea_azul{
+  border-bottom:2px solid #016be3;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+width: 100%;
+height: 100%;
+position: absolute;
+object-fit: cover;
+z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+margin: 0 25%;
+z-index: 1;
+position: relative;
+text-align: center;
+color: #dc0000;
+padding: 10px;
 }
