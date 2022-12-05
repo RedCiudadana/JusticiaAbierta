@@ -16912,3 +16912,23 @@ label.checkbox { padding-left: 20px; }
 		margin-right: 10px;
 	}
 }
+
+.cuadro_inicio{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cuadro_gris{
+	width: 90%;
+	height: 200px;
+	background-color: #777777;
+	margin-block: 30px;
+}
+
+.imagen_cuadro{
+	width: 90%;
+	height: 200px;
+	margin-block: 30px;
+}
