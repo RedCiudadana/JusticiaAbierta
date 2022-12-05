@@ -16932,3 +16932,25 @@ label.checkbox { padding-left: 20px; }
 	height: 200px;
 	margin-block: 30px;
 }
+
+.cuadro_iniciativas{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 0.5px solid #BBB;
+	border-radius: 5px;
+}
+
+.cuadro_imagen{
+	height: 200px;
+	width: 100%;
+	background-color: #BBB;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.texto_cuadro{
+	margin: 30px;
+	text-align: center;
+}
