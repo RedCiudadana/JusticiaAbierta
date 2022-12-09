@@ -6523,3 +6523,16 @@ padding: 10px;
     background-size:cover;
   }
 }
+
+.slider-indice{
+  background-image:url('/ELEMENTOS/07_BANNERS/JA-08.png');
+  background-size:100%;
+}
+
+
+@media (max-width: 700px) {
+	.slider-indice{
+    background-image:url('/ELEMENTOS/07_BANNERS/JA-08.png');
+    background-size:cover;
+  }
+}
