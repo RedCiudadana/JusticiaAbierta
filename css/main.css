@@ -6510,3 +6510,16 @@ padding: 10px;
     background-size:cover;
   }
 }
+
+.slider-encuentro{
+  background-image:url('/ELEMENTOS/07_BANNERS/JA-11.png');
+  background-size:100%;
+}
+
+
+@media (max-width: 700px) {
+	.slider-encuentro{
+    background-image:url('/ELEMENTOS/07_BANNERS/JA-11.png');
+    background-size:cover;
+  }
+}
