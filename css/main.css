@@ -6504,9 +6504,8 @@ padding: 10px;
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1400px) {
 	.slider-iniciativas{
-    background-image:url('/ELEMENTOS/07_BANNERS/JA-10.png');
     background-size:cover;
   }
 }
@@ -6517,9 +6516,8 @@ padding: 10px;
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1400px) {
 	.slider-encuentro{
-    background-image:url('/ELEMENTOS/07_BANNERS/JA-11.png');
     background-size:cover;
   }
 }
@@ -6530,9 +6528,8 @@ padding: 10px;
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1400px) {
 	.slider-indice{
-    background-image:url('/ELEMENTOS/07_BANNERS/JA-08.png');
     background-size:cover;
   }
 }
