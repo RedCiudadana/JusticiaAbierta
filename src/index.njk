@@ -11,6 +11,11 @@ permalink: "index.html"
 
 {% block content %}
 
+    <div class="popup2">
+        <button id="close2">&times;</button>
+        <a target="_blank" href="https://bit.ly/EncuentroJusticiaAbierta"><img src="/ELEMENTOS/popup-ju.gif"></a>
+    </div>
+
     <!-- slider-start -->
     <div class="video-container w-100">
         <video muted autoplay loop>
@@ -234,4 +239,8 @@ permalink: "index.html"
         </div>
     </div>
 
+{% endblock %}
+
+{% block body_javascripts %}
+    <script src="/js/popup2.js"></script>
 {% endblock %}
