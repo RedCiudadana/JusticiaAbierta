@@ -16999,3 +16999,40 @@ label.checkbox { padding-left: 20px; }
 	position: absolute;
 	border-radius:8px;
   }
+
+  .pagination ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.pagination li.current a {
+  background-color: #1fc68b;
+  color: #fff;
+}
+
+.pagination li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+[aria-current] {
+  background-color: #1fc68b!important;
+  color: #fff!important;
+}
