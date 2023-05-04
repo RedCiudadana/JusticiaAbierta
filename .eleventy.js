@@ -22,6 +22,10 @@ module.exports = function (eleventyConfig) {
         console.log(value)
     });
 
+    eleventyConfig.addFilter("sub_string", function (string) {
+        return string.substring(0, 150);
+    })
+
     eleventyConfig.addCollection("propuestas", function (collectionApi) {
         return collectionApi.getFilteredByTag('propuestas');
     });
