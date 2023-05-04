@@ -18,8 +18,19 @@ collections:
       - { name: "title", label: "Categoría" }
       - { name: "icono", label: "Icono de Categoría", widget: "image" }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
-  - name: "video" # Used in routes, e.g., /admin/collections/video
-    label: "Video" # Used in the UI
+  - name: "iniciativas" # Used in routes, e.g., /admin/collections/blog
+    label: "Iniciativas" # Used in the UI
+    folder: "src/iniciativas" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Título de Iniciativas" }
+      - { name: "imagen", label: "Imagen de Iniciativa", widget: "image" }
+      - { name: "descripcion", label: "Descripción", widget: "markdown" }
+  - name: "videos" # Used in routes, e.g., /admin/collections/video
+    label: "Videos" # Used in the UI
     folder: "src/videos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -27,6 +38,6 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Title" }
-      - { name: "description", label: "Description" }
+      - { name: "descripcion", label: "Descripción", widget: "markdown" }
       - { name: "link", label: "Enlace de video" }
       - { name: "date", label: "Date", widget: "datetime" }
