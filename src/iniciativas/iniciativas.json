@@ -1,4 +1,4 @@
 {
-    "tags": "inicativas",
-    "permalink": "inicativas/{{ page.fileSlug | slug}}/index.html"
+    "tags": "iniciativas",
+    "permalink": "iniciativas/{{ page.fileSlug | slug}}/index.html"
 }

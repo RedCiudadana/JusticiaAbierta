@@ -32,7 +32,4 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getFilteredByTag('propuestas');
     });
 
-    eleventyConfig.addCollection("iniciativas", function (collectionApi) {
-        return collectionApi.getFilteredByTag('iniciativas');
-    });
 }

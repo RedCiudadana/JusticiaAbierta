@@ -302,7 +302,7 @@ permalink: "index.html"
 
             <div class="row py-4 my-4">
 
-                {% for iniciativa in collections.iniciativas%}
+                {% for iniciativa in collections.iniciativas | limit(3) %}
                 <div class="col-lg-4 my-4">
                     <div class="cuadro_iniciativas">
                         <img style="height:220px; width:100%" src="{{iniciativa.data.imagen}}">
@@ -310,7 +310,7 @@ permalink: "index.html"
                             <h3>{{iniciativa.data.title}}</h3>
                             <p>{{iniciativa.data.descripcion}}</p>
                             <br>
-                            <a href="#" class="ver_todo">Más info</a>
+                            <a href="{{iniciativa.data.link}}" class="ver_todo">Más info</a>
                         </div>
                     </div>
                 </div>
