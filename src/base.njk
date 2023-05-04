@@ -86,11 +86,11 @@
             <!--MENU-->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto" style="margin-right: 10%;">
-                    <a class="nav-item nav-link " href="/index.html">¿Qué es Justicia Abierta?</a>
-                    <a class="nav-item nav-link" href="/indice/index.html">Índice de Justicia Abierta</a>
-                    <a class="nav-item nav-link" href="/propuestas/page-1/index.html">Propuestas</a>
-                    <a class="nav-item nav-link" href="/iniciativas/index.html">Iniciativas</a>
+                    <a class="nav-item nav-link " href="/index.html">Inicio</a>
                     <a class="nav-item nav-link" href="/encuentro/index.html">Encuentro</a>
+                    <a class="nav-item nav-link" href="/propuestas/page-1/index.html">Propuestas</a>
+                    <a class="nav-item nav-link" href="/indice/index.html">Índice de Justicia Abierta</a>
+                    <!--a class="nav-item nav-link" href="/iniciativas/index.html">Iniciativas</a-->
                     <!--a class="nav-item nav-link" href="https://portaldajusticia.redciudadana.org/">Datos</a-->
                     <a class="nav-item nav-link" href="/contacto/index.html">Contacto</a>
 
@@ -177,6 +177,20 @@
       
       })(jQuery);
     </script>
+
+    <script>
+      if (window.netlifyIdentity) {
+          window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+              window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+              });
+          }
+          });
+      }
+    </script>
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
