@@ -29,6 +29,7 @@ collections:
       - { name: "title", label: "Título de Iniciativas" }
       - { name: "imagen", label: "Imagen de Iniciativa", widget: "image" }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
+      - { name: "link", label: "Link Iniciativa" }
   - name: "videos" # Used in routes, e.g., /admin/collections/video
     label: "Videos" # Used in the UI
     folder: "src/videos" # The path to the folder where the documents are stored
@@ -39,5 +40,5 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Title" }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
-      - { name: "link", label: "Enlace de video" }
+      - { name: "link", label: "Iframe de video" }
       - { name: "date", label: "Date", widget: "datetime" }
