@@ -31,4 +31,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addCollection("propuestas", function (collectionApi) {
         return collectionApi.getFilteredByTag('propuestas');
     });
+
+    eleventyConfig.addCollection("iniciativas", function (collectionApi) {
+        return collectionApi.getFilteredByTag('iniciativas');
+    });
 }

@@ -64,13 +64,14 @@ permalink: encuentro/index.html
             </div>
 
             <div class="row py-4 my-4">
-
+                {% for video in collections.videos %}
                 <div class="col-lg-12">
-                    <h3>Video 1</h3>
+                    <h3>{{video.data.title}}</h3>
                     <div style="text-align:center">
-                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/jJHiFi5qKSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        {{video.data.link | safe}}
                     </div>
                 </div>
+                {% endfor %}
 
 
             </div>

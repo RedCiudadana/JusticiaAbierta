@@ -1,0 +1,4 @@
+{
+    "tags": "inicativas",
+    "permalink": "inicativas/{{ page.fileSlug | slug}}/index.html"
+}
