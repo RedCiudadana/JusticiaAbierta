@@ -1,6 +1,6 @@
 ---
 pagination:
-  data: propuestas
+  data: collections.propuestas
   size: 12
   alias: propuestas
 permalink: "propuestas/page-{{ pagination.pageNumber + 1}}/index.html"
@@ -49,20 +49,19 @@ permalink: "propuestas/page-{{ pagination.pageNumber + 1}}/index.html"
                 </div>
 
                 {% for prop in propuestas %}
-                    {% if prop.encuentro == "Si" %}
+                    {% if prop.data.propuestas.encuentro == "Si" %}
 
                     <div class="col-lg-4 my-4">
                         <div class="cuadro_propuesta">
                             <div class="tags">
-                                <!--a href="/categorias/{{prop.categoria | slug}}" class="filtros">{{prop.categoria}}</a-->
-                                <a href="#" class="filtros">{{prop.categoria}}</a>
+                                <a href="/categorias/{{prop.data.propuestas.categoria | slug}}" class="filtros">{{prop.data.propuestas.categoria}}</a>
                             </div>
                             <div class="numero_propuesta">
                                 <p>propuesta N.393</p>
                             </div>
                             <div class="contenido">
-                                <h5>{{prop.titulo}}</h5>
-                                <p>{{prop.resumen}}</p>
+                                <h5>{{prop.data.propuestas.titulo}}</h5>
+                                <p>{{prop.data.propuestas.resumen}}</p>
                             </div>
                             <div class="bottom">
                                 <!--div class="candidaturas">
@@ -83,20 +82,19 @@ permalink: "propuestas/page-{{ pagination.pageNumber + 1}}/index.html"
 
                     {% endif %}
 
-                    {% if prop.encuentro == "No" %}
+                    {% if prop.data.propuestas.encuentro == "No" %}
 
                     <div class="col-lg-4 my-4">
                         <div class="cuadro_propuesta">
                             <div class="tags">
-                                <!--a href="/categorias/{{prop.categoria | slug}}" class="filtros">{{prop.categoria}}</a-->
-                                <a href="#" class="filtros">{{prop.categoria}}</a>
+                                <a href="/categorias/{{prop.data.propuestas.categoria | slug}}" class="filtros">{{prop.data.propuestas.categoria}}</a>
                             </div>
                             <div class="numero_propuesta">
                                 <p>propuesta N.393</p>
                             </div>
                             <div class="contenido">
-                                <h5>{{prop.titulo}}</h5>
-                                <p>{{prop.resumen}}</p>
+                                <h5>{{prop.data.propuestas.titulo}}</h5>
+                                <p>{{prop.data.propuestas.resumen}}</p>
                             </div>
                             <div class="bottom">
                                 <!--div class="candidaturas">

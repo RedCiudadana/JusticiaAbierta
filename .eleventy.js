@@ -18,6 +18,10 @@ module.exports = function (eleventyConfig) {
         return array.slice(0, limit);
     });
 
+    eleventyConfig.addFilter('log', value => {
+        console.log(value)
+    });
+
     eleventyConfig.addCollection("propuestas", function (collectionApi) {
         return collectionApi.getFilteredByTag('propuestas');
     });
