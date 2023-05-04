@@ -37,6 +37,24 @@ permalink: "propuestas/page-{{ pagination.pageNumber + 1}}/index.html"
     <div class="section my-6">
         <div class="container">
             <div class="row ">
+
+                {% set cuenta = 0 %}
+                {% for propuesta in collections.propuestas%}
+                {% set cuenta = cuenta + 1 %}
+                {% endfor %}
+
+                <div class="col-lg-12 my-4 text-center"> 
+                    
+                    {% if cuenta == 1%}
+                    <h3>Tenemos <span class="conteo">{{cuenta}}</span> Propuesta Ciudadana</h3>
+                    {% endif %}
+                    {% if cuenta != 1%}
+                    <h3>Tenemos <span class="conteo">{{cuenta}}</span> Propuestas Ciudadanas</h3>
+                    {% endif %}
+                    <h5>Te invitamos a filtrar y encontrar propuestas
+                        ciudadanas en las siguientes áreas
+                    </h5>
+                </div>
                 
 
                 <div class="col-lg-12 my-4"> 
