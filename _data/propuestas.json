@@ -1,7 +1,90 @@
 [
     {
      "numero_propuesta": 1,
-     "Marca_temporal": "10\/11\/2022 18:45:12",
+     "Nombre": "Adiana García- Ana Méndez-Wolfgang Ochaeta",
+     "departamento": "Guatemala",
+     "categoria": "Participación ciudadana y colaboración",
+     "problema": "Aumentar el nivel de participación y colaboración de la ciudadanía en las actividades y servicios que prestan las instituciones del sector justicia. Lo anterior es importante ya que es un servicio público fundamental y determinante para la gobernanza del país. ",
+     "dirigido": "Para los usuarios del sector justicia, ciudadanía (OSC, sector privado, academia), medios de comunicación y periodistas y usuarios del sistema de justicia. ",
+     "titulo": "Guía de participación y colaboración ciudadana ",
+     "resumen": "Desarrollar e implementar una guía de buenas prácticas y recomendaciones para fometar la participación y colaboración ciudadana en el sector justicia. ",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 2,
+     "Nombre": "Cesar Perez e Iscelle Marsicovetere",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la información y datos abiertos",
+     "problema": "Desconocimiento de los conceptos de Justicia y Abiertas y las ventajas que su aplicación puede representar para los funcionarios públicos, sector empresarial, medios de comunicación, academia y ciudadanía. ",
+     "dirigido": "Organismo Judicial, sector empresarial, medios de comunicación, academia y ciudadanía. ",
+     "titulo": "Campaña de divulgación Red Justicia Abierta ",
+     "resumen": "Actualización para abogados y funcionarios públicos, campaña de redes sociales, podcast y actividades presenciales, construcción de capacidades para sociedad civil, capacitaciones sobre uso y procesamiento de datos abiertos. ",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 3,
+     "Nombre": "Guillermo Bonilla ",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la información y datos abiertos",
+     "problema": "Falta de normas que regulen cómo deberían las instituciones públicas implementar políticas de datos abiertos y los estándares de los mismos.  ",
+     "dirigido": "Ciudadanía y las instituciones",
+     "titulo": "Ley de Datos Abiertos",
+     "resumen": "Crear y aprobar una ley que regule el marco legal de datos abiertos, es decir: que los datos publicados sean primarios, accesibles, completos, procesables por máquinas y no discriminados.",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 4,
+     "Nombre": "Adriana García ",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la información y datos abiertos",
+     "problema": "Capacitar al personal, es importante porque así ellos aprenden a usar las herramientas de acceso a la información de manera eficiente.",
+     "dirigido": "Para el personal de las instituciones ",
+     "titulo": "Capacitación masiva del personal ",
+     "resumen": "Capacitar al personal de las instituciones para que puedan hacer un buen uso de las herramientas para el acceso a la información, y poder también definir los objetivos de dicha capacitación.",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 5,
+     "Nombre": "Ximena Matus",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a Justicia",
+     "problema": "La falta de capacitaciòn de los profesionales del sector Justicia, y còmo esto puede afectar en como manejan los procesos de justicia con los ciudadanos",
+     "dirigido": "Generalmente los ciudadanos que estan viviendo un proceso de justicia, pero impacta tambien a comunidades vulnerables o grupos indìgenas",
+     "titulo": "Capacitaciones para profesionales del sector Justicia",
+     "resumen": "Una serie de capacitaciones que permita que los profeisonales del sector justicia puedan desarrollar nuevas habilidades y conocimientos, para que peudan enfocarse en promover el acceso a la Justicia en sus comunidades",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 6,
+     "Nombre": "Adriana Garcia",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la información y datos abiertos",
+     "problema": "El sistema judicial no es inclusivo ni respetuoso de las diversas culturas y tradiciones presentes en una sociedad. ",
+     "dirigido": "Las comunidades indígenas",
+     "titulo": "Promover la interculturalidad en comunidades indígenas ",
+     "resumen": "Promover la interculturalidad en el sistema judicial y garantizar servicios de traducción e interpretación en los idiomas indígenas locales son aspectos cruciales. Esto permitirá que las personas indígenas comprendan los procedimientos legales y se expresen en su idioma materno, asegurando una participación efectiva en los procesos judiciales. De igual manera,  Proporcionar servicios de interpretación y traducción es esencial para garantizar una comunicación efectiva entre los usuarios del sistema judicial y los profesionales legales. ",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 7,
+     "Nombre": "Emy Dayann Lopez Espina",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a Justicia",
+     "problema": "Facilitar el acceso de justicia a cada uno de los idiomas de la region para que cada una de las personas indistintamente de su region pueden tener un acceso para impartirles justicia",
+     "dirigido": "Considero que no seria un problema al contrario es para fortalecer el acceso a cada una de las regiones habitantes de Guatemala",
+     "titulo": "Facilitar el acceso a cada uno de los idiomas de la region",
+     "resumen": "Implementar a favor de cada cultura el acceso de justicia en los diferentes idiomas habitacionales",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 8,
      "Nombre": "José Eduardo Arenales Donis",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -13,8 +96,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 2,
-     "Marca_temporal": "10\/11\/2022 18:47:11",
+     "numero_propuesta": 9,
      "Nombre": "Esvin Elías Talé Tumax",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -26,8 +108,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 3,
-     "Marca_temporal": "10\/11\/2022 18:47:26",
+     "numero_propuesta": 10,
      "Nombre": "Erik José de Jesús Suruy Monterroso",
      "departamento": "Guatemala",
      "categoria": "Instituciones de Justicia",
@@ -39,8 +120,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 4,
-     "Marca_temporal": "10\/11\/2022 18:47:50",
+     "numero_propuesta": 11,
      "Nombre": "Melany Gabriela Martínez Ordoñez",
      "departamento": "Guatemala",
      "categoria": "Transparencia y rendición de cuentas",
@@ -52,8 +132,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 5,
-     "Marca_temporal": "10\/11\/2022 18:47:51",
+     "numero_propuesta": 12,
      "Nombre": "Evelyn Alejandra Guzmán Ramírez",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -65,8 +144,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 6,
-     "Marca_temporal": "10\/11\/2022 18:48:56",
+     "numero_propuesta": 13,
      "Nombre": "Edgar Fernando Lucas Chavez",
      "departamento": "Guatemala",
      "categoria": "Inclusión",
@@ -78,8 +156,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 7,
-     "Marca_temporal": "10\/11\/2022 18:49:28",
+     "numero_propuesta": 14,
      "Nombre": "Mildred Evangelina Tolón Tolón",
      "departamento": "Guatemala",
      "categoria": "Participación ciudadana y colaboración",
@@ -91,8 +168,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 8,
-     "Marca_temporal": "10\/11\/2022 18:49:50",
+     "numero_propuesta": 15,
      "Nombre": "Belis Maribel Florián Florián",
      "departamento": "Guatemala",
      "categoria": "Poder Judicial",
@@ -104,8 +180,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 9,
-     "Marca_temporal": "10\/11\/2022 18:49:59",
+     "numero_propuesta": 16,
      "Nombre": "Carlos Sosa Pinzón",
      "departamento": "Guatemala",
      "categoria": "Mediciones",
@@ -117,8 +192,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 10,
-     "Marca_temporal": "10\/11\/2022 18:50:13",
+     "numero_propuesta": 17,
      "Nombre": "German Valdez Barrios",
      "departamento": "Guatemala",
      "categoria": "Transformación Digital",
@@ -130,8 +204,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 11,
-     "Marca_temporal": "10\/11\/2022 18:50:33",
+     "numero_propuesta": 18,
      "Nombre": "Miriam Juárez Sazo",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -143,8 +216,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 12,
-     "Marca_temporal": "10\/11\/2022 18:50:46",
+     "numero_propuesta": 19,
      "Nombre": "Kerlin Alejandra Nájera Ramírez",
      "departamento": "Guatemala",
      "categoria": "Mediciones",
@@ -156,8 +228,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 13,
-     "Marca_temporal": "10\/11\/2022 18:52:24",
+     "numero_propuesta": 20,
      "Nombre": "Diana Subuyuj",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -169,8 +240,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 14,
-     "Marca_temporal": "10\/11\/2022 18:52:54",
+     "numero_propuesta": 21,
      "Nombre": "Evelyn Lucía Chinchilla Hernández",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -182,8 +252,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 15,
-     "Marca_temporal": "10\/11\/2022 18:53:47",
+     "numero_propuesta": 22,
      "Nombre": "Zoila verónica González es",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -195,8 +264,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 16,
-     "Marca_temporal": "10\/11\/2022 18:54:24",
+     "numero_propuesta": 23,
      "Nombre": "Delmy Yanira León García",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -208,8 +276,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 17,
-     "Marca_temporal": "10\/11\/2022 18:55:23",
+     "numero_propuesta": 24,
      "Nombre": "Aaron Estuardo Cruz García",
      "departamento": "Guatemala",
      "categoria": "Participación ciudadana y colaboración",
@@ -221,8 +288,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 18,
-     "Marca_temporal": "10\/11\/2022 18:57:10",
+     "numero_propuesta": 25,
      "Nombre": "Madelyn Nataly Ordoñez Guzmán",
      "departamento": "Guatemala",
      "categoria": "Transparencia y rendición de cuentas",
@@ -234,8 +300,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 19,
-     "Marca_temporal": "10\/11\/2022 18:58:24",
+     "numero_propuesta": 26,
      "Nombre": "Daniel Anthony Roquel De León",
      "departamento": "Guatemala",
      "categoria": "Acceso a Justicia",
@@ -247,8 +312,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 20,
-     "Marca_temporal": "10\/11\/2022 18:58:26",
+     "numero_propuesta": 27,
      "Nombre": "Thelma Aracely Martínez Argueta",
      "departamento": "Guatemala",
      "categoria": "Acceso a Justicia",
@@ -260,8 +324,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 21,
-     "Marca_temporal": "10\/11\/2022 18:59:43",
+     "numero_propuesta": 28,
      "Nombre": "Veronica Paz Loreto",
      "departamento": "Guatemala",
      "categoria": "Instituciones de Justicia",
@@ -273,8 +336,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 22,
-     "Marca_temporal": "10\/11\/2022 18:59:52",
+     "numero_propuesta": 29,
      "Nombre": "Emy Dayann Lopez Espina",
      "departamento": "Guatemala",
      "categoria": "Participación ciudadana y colaboración",
@@ -286,8 +348,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 23,
-     "Marca_temporal": "10\/11\/2022 19:00:05",
+     "numero_propuesta": 30,
      "Nombre": "JOSE LUIS ANTUNEZ SALES",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -299,8 +360,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 24,
-     "Marca_temporal": "10\/11\/2022 19:00:38",
+     "numero_propuesta": 31,
      "Nombre": "Raquel Arabella miranda",
      "departamento": "Guatemala",
      "categoria": "Instituciones de Justicia",
@@ -312,8 +372,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 25,
-     "Marca_temporal": "10\/11\/2022 19:12:46",
+     "numero_propuesta": 32,
      "Nombre": "Pablo Alonzo",
      "departamento": "Guatemala",
      "categoria": "Derechos Humanos",
@@ -325,8 +384,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 26,
-     "Marca_temporal": "10\/11\/2022 19:32:25",
+     "numero_propuesta": 33,
      "Nombre": "Ligia Maria Villeda Lopez",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -338,8 +396,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 27,
-     "Marca_temporal": "10\/11\/2022 19:50:25",
+     "numero_propuesta": 34,
      "Nombre": "Suzana Estévez Hernández",
      "departamento": "Guatemala",
      "categoria": "Transformación Digital",
@@ -351,8 +408,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 28,
-     "Marca_temporal": "10\/11\/2022 21:47:13",
+     "numero_propuesta": 35,
      "Nombre": "Norma Verónica Paz Lorete",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -364,8 +420,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 29,
-     "Marca_temporal": "11\/11\/2022 7:53:50",
+     "numero_propuesta": 36,
      "Nombre": "Erick León",
      "departamento": "Guatemala",
      "categoria": "Inclusión",
@@ -377,8 +432,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 30,
-     "Marca_temporal": "11\/17\/2022 17:35:17",
+     "numero_propuesta": 37,
      "Nombre": "Francisco Rafael González Flores",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -390,8 +444,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 31,
-     "Marca_temporal": "11\/17\/2022 17:51:37",
+     "numero_propuesta": 38,
      "Nombre": "Roger Martínez López",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -403,8 +456,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 32,
-     "Marca_temporal": "3\/3\/2023 9:19:06",
+     "numero_propuesta": 39,
      "Nombre": "Evelin Elizabeth Ovalle Mejía",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -416,8 +468,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 33,
-     "Marca_temporal": "3\/3\/2023 9:20:16",
+     "numero_propuesta": 40,
      "Nombre": "Norma Emilia García Arana",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -429,8 +480,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 34,
-     "Marca_temporal": "3\/3\/2023 9:27:04",
+     "numero_propuesta": 41,
      "Nombre": "Josué Guerra",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -442,8 +492,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 35,
-     "Marca_temporal": "3\/3\/2023 9:32:06",
+     "numero_propuesta": 42,
      "Nombre": "Julia Lorena Buch Gómez",
      "departamento": "Guatemala",
      "categoria": "Transparencia y rendición de cuentas",
@@ -455,8 +504,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 36,
-     "Marca_temporal": "3\/3\/2023 9:33:15",
+     "numero_propuesta": 43,
      "Nombre": "Javier Barreda",
      "departamento": "Guatemala",
      "categoria": "Transparencia y rendición de cuentas",
@@ -468,8 +516,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 37,
-     "Marca_temporal": "3\/3\/2023 9:35:42",
+     "numero_propuesta": 44,
      "Nombre": "Francis Contreras",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -481,8 +528,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 38,
-     "Marca_temporal": "3\/3\/2023 9:39:57",
+     "numero_propuesta": 45,
      "Nombre": "Zoila Toj Ruiz",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -494,8 +540,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 39,
-     "Marca_temporal": "3\/3\/2023 9:41:18",
+     "numero_propuesta": 46,
      "Nombre": "Maria del Carmen Hernandez Samayoa",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -507,8 +552,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 40,
-     "Marca_temporal": "3\/3\/2023 9:41:21",
+     "numero_propuesta": 47,
      "Nombre": "Beisy Garcia",
      "departamento": "Guatemala",
      "categoria": "Instituciones de Justicia",
@@ -520,8 +564,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 41,
-     "Marca_temporal": "3\/3\/2023 9:42:28",
+     "numero_propuesta": 48,
      "Nombre": "María Piedad Gómez Ordoñez",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -533,8 +576,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 42,
-     "Marca_temporal": "3\/3\/2023 9:42:58",
+     "numero_propuesta": 49,
      "Nombre": "Luis Felipe Batz Guzmán",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -546,8 +588,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 43,
-     "Marca_temporal": "3\/3\/2023 9:45:10",
+     "numero_propuesta": 50,
      "Nombre": "Eddy Armando Etec Ajcet",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -559,8 +600,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 44,
-     "Marca_temporal": "3\/3\/2023 9:49:58",
+     "numero_propuesta": 51,
      "Nombre": "Mario Contreras",
      "departamento": "Guatemala",
      "categoria": "Acceso a Justicia",
@@ -572,8 +612,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 45,
-     "Marca_temporal": "3\/3\/2023 9:51:08",
+     "numero_propuesta": 52,
      "Nombre": "Byron Armando",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -585,8 +624,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 46,
-     "Marca_temporal": "3\/3\/2023 9:53:12",
+     "numero_propuesta": 53,
      "Nombre": "Ana Lucía Estrada Hernández",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -598,8 +636,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 47,
-     "Marca_temporal": "3\/3\/2023 9:54:07",
+     "numero_propuesta": 54,
      "Nombre": "Víctor Manuel Mendoza Simón",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -611,8 +648,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 48,
-     "Marca_temporal": "3\/3\/2023 9:55:06",
+     "numero_propuesta": 55,
      "Nombre": "Dan Monzón",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -624,8 +660,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 49,
-     "Marca_temporal": "3\/3\/2023 9:55:29",
+     "numero_propuesta": 56,
      "Nombre": "Henry Coc",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -637,8 +672,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 50,
-     "Marca_temporal": "3\/3\/2023 9:55:58",
+     "numero_propuesta": 57,
      "Nombre": "Jaime Francisco Aguilar de León",
      "departamento": "Guatemala",
      "categoria": "Transparencia y rendición de cuentas",
@@ -650,8 +684,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 51,
-     "Marca_temporal": "3\/3\/2023 9:58:04",
+     "numero_propuesta": 58,
      "Nombre": "Gerardo Enrique Estrada Carrera",
      "departamento": "Guatemala",
      "categoria": "Transparencia y rendición de cuentas",
@@ -663,8 +696,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 52,
-     "Marca_temporal": "3\/3\/2023 9:58:47",
+     "numero_propuesta": 59,
      "Nombre": "Zoila Toj Ruiz",
      "departamento": "Guatemala",
      "categoria": "Participación ciudadana y colaboración",
@@ -676,8 +708,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 53,
-     "Marca_temporal": "3\/3\/2023 9:59:07",
+     "numero_propuesta": 60,
      "Nombre": "Magda Herrera",
      "departamento": "Guatemala",
      "categoria": "Inclusión",
@@ -689,8 +720,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 54,
-     "Marca_temporal": "3\/3\/2023 9:59:25",
+     "numero_propuesta": 61,
      "Nombre": "Marlon Humberto Pirir García",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -702,8 +732,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 55,
-     "Marca_temporal": "3\/3\/2023 10:00:18",
+     "numero_propuesta": 62,
      "Nombre": "Yocelin Andrea Zamora Monterroso",
      "departamento": "Guatemala",
      "categoria": "Instituciones de Justicia",
@@ -715,8 +744,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 56,
-     "Marca_temporal": "3\/3\/2023 10:03:21",
+     "numero_propuesta": 63,
      "Nombre": "Patricia Guadalupe Zavaleta Sinay",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -728,8 +756,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 57,
-     "Marca_temporal": "3\/3\/2023 10:05:53",
+     "numero_propuesta": 64,
      "Nombre": "Kenneth Andres Peruch Alvarez",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -741,8 +768,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 58,
-     "Marca_temporal": "3\/3\/2023 10:07:33",
+     "numero_propuesta": 65,
      "Nombre": "Daniel Antonio De León Mejía",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -754,8 +780,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 59,
-     "Marca_temporal": "3\/3\/2023 10:07:47",
+     "numero_propuesta": 66,
      "Nombre": "Francisca Maribel Matias Garcia",
      "departamento": "Guatemala",
      "categoria": "Comunicación y Lenguaje Claro",
@@ -767,8 +792,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 60,
-     "Marca_temporal": "3\/3\/2023 10:08:04",
+     "numero_propuesta": 67,
      "Nombre": "Maudiel Girón Jordán",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -780,8 +804,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 61,
-     "Marca_temporal": "3\/3\/2023 10:08:05",
+     "numero_propuesta": 68,
      "Nombre": "Eslie Mercedes Pérez Ruiz",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -793,8 +816,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 62,
-     "Marca_temporal": "3\/3\/2023 10:09:07",
+     "numero_propuesta": 69,
      "Nombre": "Roberto Antonio De León García",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -806,8 +828,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 63,
-     "Marca_temporal": "3\/3\/2023 10:08:23",
+     "numero_propuesta": 70,
      "Nombre": "zoila Toj Ruiz",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -819,8 +840,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 64,
-     "Marca_temporal": "3\/3\/2023 10:08:58",
+     "numero_propuesta": 71,
      "Nombre": "Julio Armando Civil Ajuchan",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -832,8 +852,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 65,
-     "Marca_temporal": "3\/3\/2023 10:09:15",
+     "numero_propuesta": 72,
      "Nombre": "Carla Villatoro",
      "departamento": "Guatemala",
      "categoria": "Comunicación y Lenguaje Claro",
@@ -845,8 +864,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 66,
-     "Marca_temporal": "3\/3\/2023 10:09:31",
+     "numero_propuesta": 73,
      "Nombre": "Nancy Soliz Gomez",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -858,8 +876,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 67,
-     "Marca_temporal": "3\/3\/2023 10:09:54",
+     "numero_propuesta": 74,
      "Nombre": "Gilda Mishel López Ríos",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -871,8 +888,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 68,
-     "Marca_temporal": "3\/3\/2023 10:09:51",
+     "numero_propuesta": 75,
      "Nombre": "César Ortega",
      "departamento": "Guatemala",
      "categoria": "Legislación \/ Marco normativo",
@@ -884,8 +900,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 69,
-     "Marca_temporal": "3\/3\/2023 10:11:50",
+     "numero_propuesta": 76,
      "Nombre": "VERA DEIFILIA GUZMÁN",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -897,8 +912,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 70,
-     "Marca_temporal": "3\/3\/2023 10:12:18",
+     "numero_propuesta": 77,
      "Nombre": "ANA RAQUEL HIDALGO LIMA",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -910,8 +924,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 71,
-     "Marca_temporal": "3\/3\/2023 10:12:30",
+     "numero_propuesta": 78,
      "Nombre": "ANA RAQUEL HIDALGO LIMA",
      "departamento": "Guatemala",
      "categoria": "Mediciones",
@@ -923,8 +936,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 72,
-     "Marca_temporal": "3\/3\/2023 10:17:19",
+     "numero_propuesta": 79,
      "Nombre": "María de los Ángeles Rodríguez Coc",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -936,8 +948,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 73,
-     "Marca_temporal": "3\/3\/2023 10:27:17",
+     "numero_propuesta": 80,
      "Nombre": "Rosa Cristina Gonzalez Navichoc",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -949,8 +960,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 74,
-     "Marca_temporal": "3\/3\/2023 10:29:17",
+     "numero_propuesta": 81,
      "Nombre": "Donald Estuardo Schaad Moz",
      "departamento": "Guatemala",
      "categoria": "Acceso a la información y datos abiertos",
@@ -962,8 +972,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 75,
-     "Marca_temporal": "3\/3\/2023 10:30:40",
+     "numero_propuesta": 82,
      "Nombre": "Mildred Azucena Castillo Rodríguez",
      "departamento": "Guatemala",
      "categoria": "Mediciones",
@@ -975,8 +984,7 @@
      "terminos": "Si"
     },
     {
-     "numero_propuesta": 76,
-     "Marca_temporal": "3\/3\/2023 11:01:10",
+     "numero_propuesta": 83,
      "Nombre": "Verónica Alarcón Ramírez",
      "departamento": "Guatemala",
      "categoria": "Transparencia y rendición de cuentas",
@@ -984,6 +992,318 @@
      "dirigido": "Ciudadania",
      "titulo": "Generar mecanismos que permitan la lucha contra la corrupción y la transparencia para mejorar los servicios públicos y la asignación de recursos",
      "resumen": "Generar mecanismos que permitan la lucha contra la corrupción y la transparencia para mejorar los servicios públicos y la asignación de recursos",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 84,
+     "Nombre": "Equipo 1",
+     "departamento": "Guatemala",
+     "categoria": "Participación Ciudadana y Colaboración",
+     "problema": "Falta de participación ciudadana en la toma de decisiones judiciales",
+     "dirigido": "Ciudadania",
+     "titulo": "Participación ciudadana en decisiones judiciales",
+     "resumen": "Crear un Consejo Ciudadano de Justicia para involucrar a los ciudadanos en la toma de decisiones judiciales",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 85,
+     "Nombre": "Equipo 2",
+     "departamento": "Guatemala",
+     "categoria": "Participación Ciudadana y Colaboración",
+     "problema": "Ausencia de canales formales para que los ciudadanos brinden su retroalimentación sobre el sistema judicial",
+     "dirigido": "Ciudadania",
+     "titulo": "Retroalimentación ciudadana",
+     "resumen": "Implementar un sistema de comentarios y sugerencias en el sistema judicial para recabar la retroalimentación de los ciudadanos",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 86,
+     "Nombre": "Equipo 3",
+     "departamento": "Guatemala",
+     "categoria": "Participación Ciudadana y Colaboración",
+     "problema": "Falta de colaboración y sinergia entre el sector justicia y la sociedad civil",
+     "dirigido": "Ciudadania",
+     "titulo": "Colaboración entre sector justicia y sociedad civil",
+     "resumen": "Establecer convenios de colaboración entre instituciones de justicia y organizaciones de la sociedad civil para promover proyectos conjuntos",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 87,
+     "Nombre": "Equipo 1",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a Justicia",
+     "problema": "Dificultad de acceso a servicios legales debido a limitaciones económicas",
+     "dirigido": "Ciudadania",
+     "titulo": "Reducción de barreras económicas",
+     "resumen": "Implementar un programa de asistencia legal gratuita para personas de bajos recursos económicos",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 88,
+     "Nombre": "Equipo 2",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a Justicia",
+     "problema": "Trámites judiciales complejos y poco accesibles para los ciudadanos",
+     "dirigido": "Ciudadania",
+     "titulo": "Simplificación de trámites",
+     "resumen": "Establecer procesos judiciales simplificados y orientados al usuario, con requisitos claros y procedimientos ágiles",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 89,
+     "Nombre": "Equipo 3",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a Justicia",
+     "problema": "Limitado acceso a servicios legales por falta de recursos económicos",
+     "dirigido": "Ciudadania",
+     "titulo": "Promoción de servicios legales gratuitos",
+     "resumen": "Establecer clínicas legales gratuitas en comunidades de bajos recursos para brindar asesoría y representación legal",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 90,
+     "Nombre": "Equipo 1",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Opacidad en los procesos judiciales y falta de acceso a la información relevante",
+     "dirigido": "Ciudadania",
+     "titulo": "Transparencia en procesos judiciales",
+     "resumen": "Publicar en línea los procedimientos judiciales y los fallos emitidos, asegurando la transparencia y accesibilidad de la información",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 91,
+     "Nombre": "Equipo 2",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Escasez de información legal accesible para los ciudadanos",
+     "dirigido": "Ciudadania",
+     "titulo": "Difusión de información relevante",
+     "resumen": "Crear una plataforma en línea para difundir información legal clara y comprensible para los ciudadanos",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 92,
+     "Nombre": "Equipo 3",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Restricciones en el acceso a datos judiciales y falta de transparencia",
+     "dirigido": "Ciudadania",
+     "titulo": "Apertura de datos judiciales",
+     "resumen": "Establecer una política de datos abiertos en el sistema judicial para facilitar el acceso y la reutilización de la información",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 93,
+     "Nombre": "Equipo 1",
+     "departamento": "Guatemala",
+     "categoria": "Participación Ciudadana y Colaboración",
+     "problema": "Escasa comunicación y diálogo entre el sistema de justicia y los ciudadanos",
+     "dirigido": "Ciudadania",
+     "titulo": "Espacios de diálogo entre ciudadanos y el sistema de justicia",
+     "resumen": "Crear mesas de diálogo periódicas entre representantes del sistema de justicia y la ciudadanía para discutir temas de interés",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 94,
+     "Nombre": "Equipo 2",
+     "departamento": "Guatemala",
+     "categoria": "Participación Ciudadana y Colaboración",
+     "problema": "Conflictos comunitarios",
+     "dirigido": "Ciudadania",
+     "titulo": "Promoción de la mediación comunitaria",
+     "resumen": "Implementar programas de mediación comunitaria como alternativa de resolución de conflictos",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 95,
+     "Nombre": "Equipo 1",
+     "departamento": "Guatemala",
+     "categoria": "Lenguaje Claro",
+     "problema": "Uso de terminología legal compleja y poco accesible para los ciudadanos",
+     "dirigido": "Ciudadania",
+     "titulo": "Simplificación de términos legales",
+     "resumen": "Desarrollar guías y materiales informativos en lenguaje claro y comprensible para facilitar la comprensión de los ciudadanos sobre el sistema legal",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 96,
+     "Nombre": "Equipo 2",
+     "departamento": "Guatemala",
+     "categoria": "Lenguaje Claro",
+     "problema": "Comunicación deficiente y dificultad para entender y ser entendido por los ciudadanos",
+     "dirigido": "Ciudadania",
+     "titulo": "Capacitación en comunicación efectiva",
+     "resumen": "Brindar capacitación a los funcionarios judiciales en habilidades de comunicación efectiva para mejorar la interacción con los ciudadanos",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 97,
+     "Nombre": "Equipo 3",
+     "departamento": "Guatemala",
+     "categoria": "Lenguaje Claro",
+     "problema": "Limitado acceso a la información legal para personas con discapacidades",
+     "dirigido": "Ciudadania",
+     "titulo": "Creación de materiales informativos accesibles",
+     "resumen": "Elaborar folletos y documentos informativos en formatos accesibles para personas con discapacidades visuales o de lectura",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 98,
+     "Nombre": "Equipo 1",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Dificultad de acceso y consulta de documentos físicos en los archivos judiciales",
+     "dirigido": "Ciudadania",
+     "titulo": "Digitalización de archivos judiciales",
+     "resumen": "Implementar un proceso de digitalización de los archivos judiciales para facilitar el acceso y la búsqueda de información",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 99,
+     "Nombre": "Equipo 2",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Falta de actualización y dificultad en la navegación de los portales de transparencia existentes",
+     "dirigido": "Ciudadania",
+     "titulo": "Mejora de portales de transparencia",
+     "resumen": "Actualizar y mejorar los portales de transparencia del sistema de justicia para garantizar la accesibilidad y la disponibilidad de información actualizada",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 100,
+     "Nombre": "Equipo 3",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Variabilidad en la calidad y presentación de la información judicial disponible",
+     "dirigido": "Ciudadania",
+     "titulo": "Establecimiento de estándares de calidad en la publicación de información judicial",
+     "resumen": "Definir estándares y lineamientos para garantizar la calidad y la consistencia en la publicación de información judicial en línea",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 101,
+     "Nombre": "Equipo 4",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Dificultad de acceso y consulta de documentos físicos en los archivos judiciales",
+     "dirigido": "Ciudadania",
+     "titulo": "Digitalización de archivos judiciales",
+     "resumen": "Implementar un proceso de digitalización de los archivos judiciales para facilitar el acceso y la búsqueda de información",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 102,
+     "Nombre": "Equipo 5",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Falta de actualización y dificultad en la navegación de los portales de transparencia existentes",
+     "dirigido": "Ciudadania",
+     "titulo": "Mejora de portales de transparencia",
+     "resumen": "Actualizar y mejorar los portales de transparencia del sistema de justicia para garantizar la accesibilidad y la disponibilidad de información actualizada",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 103,
+     "Nombre": "Equipo 1",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Variabilidad en la calidad y presentación de la información judicial disponible",
+     "dirigido": "Ciudadania",
+     "titulo": "Establecimiento de estándares de calidad en la publicación de información judicial",
+     "resumen": "Definir estándares y lineamientos para garantizar la calidad y la consistencia en la publicación de información judicial en línea",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 104,
+     "Nombre": "Equipo 2",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Limitada disponibilidad de datos y estadísticas sobre el sistema judicial",
+     "dirigido": "Ciudadania",
+     "titulo": "Apertura de datos sobre estadísticas judiciales",
+     "resumen": "Publicar datos actualizados y desglosados sobre el desempeño del sistema judicial para facilitar el monitoreo y la evaluación",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 105,
+     "Nombre": "Equipo 3",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Desconocimiento de los ciudadanos sobre sus derechos y cómo acceder a la información pública",
+     "dirigido": "Ciudadania",
+     "titulo": "Capacitación en acceso a la información",
+     "resumen": "Brindar capacitación a los ciudadanos sobre sus derechos de acceso a la información y cómo ejercerlos de manera efectiva",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 106,
+     "Nombre": "Equipo 4",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a la Información Pública y Datos Abiertos",
+     "problema": "Procedimientos engorrosos y lentos para realizar solicitudes de información",
+     "dirigido": "Ciudadania",
+     "titulo": "Implementación de un sistema de solicitudes de información en línea",
+     "resumen": "Establecer un sistema en línea para que los ciudadanos puedan realizar solicitudes de información pública de manera ágil y eficiente",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 107,
+     "Nombre": "Equipo 1",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a Justicia",
+     "problema": "Barreras y desigualdades en el acceso a la justicia para grupos vulnerables",
+     "dirigido": "Ciudadania",
+     "titulo": "Fortalecimiento de la defensa legal para grupos vulnerables",
+     "resumen": "Garantizar el acceso a la representación legal para grupos vulnerables, como mujeres víctimas de violencia de género o migrantes",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 108,
+     "Nombre": "Equipo 2",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a Justicia",
+     "problema": "Excesiva dependencia de la justicia punitiva y falta de enfoque en la reparación y reconciliación",
+     "dirigido": "Ciudadania",
+     "titulo": "Promoción de la justicia restaurativa",
+     "resumen": "Impulsar programas de justicia restaurativa para fomentar la resolución de conflictos de manera pacífica y participativa",
+     "encuentro": "Si",
+     "terminos": "Si"
+    },
+    {
+     "numero_propuesta": 109,
+     "Nombre": "Equipo 3",
+     "departamento": "Guatemala",
+     "categoria": "Acceso a Justicia",
+     "problema": "Falta de sensibilidad y conocimiento sobre las necesidades de género y los derechos humanos en el sistema judicial",
+     "dirigido": "Ciudadania",
+     "titulo": "Capacitación en enfoque de género y derechos humanos",
+     "resumen": "Brindar capacitación a los funcionarios judiciales en enfoques de género y derechos humanos para garantizar una justicia equitativa e inclusiva",
      "encuentro": "Si",
      "terminos": "Si"
     }

@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: propuestas
   addAllPagesToCollections: true
-permalink: "propuestas/{{propuestas.titulo | slug | sub_string}}/index.html"
+permalink: "propuestas/{{propuestas.numero_propuesta}}/{{propuestas.titulo | slug | sub_string}}/index.html"
 tags:
   - propuestas
 ---
