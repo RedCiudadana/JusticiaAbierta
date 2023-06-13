@@ -6212,6 +6212,7 @@ optgroup{
   font-size: 13px;
   letter-spacing: -0.2px;
   transition: 0.5s;
+  white-space: nowrap;
 }
 
 .filtros:hover{
