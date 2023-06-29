@@ -6491,7 +6491,7 @@ z-index: 0;
 
 /* Just styling the content of the div, the *magic* in the previous rules */
 .video-container .caption {
-margin: 0 25%;
+margin: 0 13%;
 z-index: 1;
 position: relative;
 text-align: center;

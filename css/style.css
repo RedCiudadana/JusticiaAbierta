@@ -16936,7 +16936,8 @@ label.checkbox { padding-left: 20px; }
 .cuadro_iniciativas{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+
+	height: 100%;
 	align-items: center;
 	border: 0.5px solid #BBB;
 	border-radius: 5px;
@@ -17039,4 +17040,40 @@ label.checkbox { padding-left: 20px; }
 
 .conteo{
 	font-size: 40px;
+}
+
+.links_iniciales{
+	border-radius: 15% / 45%;
+	padding: 15px 25px;
+	display: flex;
+	align-items: center;
+}
+
+.links_inicialesv2{
+	background-color: #fff;
+	border-radius: 15% / 45%;
+	padding: 15px 25px;
+	height: 100%;
+}
+
+.links_iniciales div img{
+	width: 50px;
+	height: 50px;
+}
+
+.links_iniciales .texto_iniciales{
+	text-align: left;
+	padding: 10px
+}
+
+.links_iniciales .texto_iniciales h6{
+	font-size: 15px;
+	text-align: left!important;
+}
+
+.links_iniciales .texto_iniciales p{
+	font-size: 11px;
+	line-height: 11px;
+	color: #ddd;
+	margin-bottom: 0px!important;
 }

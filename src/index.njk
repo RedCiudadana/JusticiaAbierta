@@ -23,51 +23,87 @@ permalink: "index.html"
         </video>
         <div class="caption">
             <!--h1 class="txt-white">¡La Ciudadanía Propone!</h1-->
-            <h1 class="txt-white " >Por una justicia transparente, colaborativa y que promueva la participación ciudadana</h1>
-            <br>
-            <a class="btn" href="/nuevapropuesta/index.html">Crear una Propuesta</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="txt-white " >Por una justicia transparente, colaborativa y que promueva la participación ciudadana</h1>
+                </div>
+            </div>
+            <div class="row my-4">
+                
+                <a href="" class="links_iniciales col-lg-4">
+                    <div class="d-flex links_inicialesv2" style="align-items:center">
+                        <img src="/ELEMENTOS/ELEMENTOS WEB/03_ICONOS/ICONOS-16.png">
+                        <div class="texto_iniciales">
+                            <h6>Formación</h6>
+                            <p>Lorem ipsum dolor sit amet, consecetuer lorem ipsum dolor sit amet</p>
+                        </div> 
+                    </div>
+                </a>
+
+                <a href="" class="links_iniciales col-lg-4">
+                    <div class="d-flex links_inicialesv2" style="align-items:center">
+                        <img src="/ELEMENTOS/ELEMENTOS WEB/03_ICONOS/ICONOS-14.png">
+                        <div class="texto_iniciales">
+                            <h6>Investigación y Diagnóstico</h6>
+                            <p>Lorem ipsum dolor sit amet, consecetuer lorem ipsum dolor sit amet</p>
+                        </div> 
+                    </div>
+                </a>
+
+                <a href="" class="links_iniciales col-lg-4">
+                    <div class="d-flex links_inicialesv2" style="align-items:center">
+                        <img src="/ELEMENTOS/ELEMENTOS WEB/03_ICONOS/ICONOS-27.png">
+                        <div class="texto_iniciales">
+                            <h6>Innovación Publica</h6>
+                            <p>Lorem ipsum dolor sit amet, consecetuer lorem ipsum dolor sit amet</p>
+                        </div> 
+                    </div>
+                </a>
+
+                
+            </div>
+
         </div>
     </div>
 
-
     <!--CONTENIDO-->
 
-     <!-- que es de Justicia Abierta-->
+    <!-- Eventos -->
     <div class="section m-0">
-        <div class="container py-6">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+        <div class="container my-6">
+            <div class="row">
+                <div class="col-xl-12 text-center">
 
-                    <div style="text-align:justify">
-                        <h3>¿Qué es Justicia Abierta?</h3>
-                        <p style="font-size:18px;line-height:22px">
-                            La Justicia Abierta pretende por medio de la innovación del sistema de 
-                            justicia y los servicios que presta, resolver los problemas del ámbito 
-                            de la justicia o situaciones de extrema injusticia en las que se encuentran 
-                            miembros de la sociedad. 
-                        </p>
-                        <p style="font-size:18px;line-height:22px">
-                            Desde Red Ciudadana, buscamos promover y desarrollar acciones que generen 
-                            procesos innovadores, que promuevan la participación ciudadana y transparencia. 
-                            Desarrollamos procesos de formación, encuentros con expertos internacionales e
-                             iniciativas innovadoras.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6">
-
-                    <div style="text-align:center">
-                        <iframe width="100%" height="330px" src="https://www.youtube.com/embed/jJHiFi5qKSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <h1>Iniciativas</h1>
+                    <h6>Conoce las iniciativas desarrolladas por Red Ciudadana para promover una justicia abierta.
+                    </h6>
 
                 </div>
             </div>
+
+            <div class="row py-4 my-4">
+
+                {% for iniciativa in collections.iniciativas | limit(3) %}
+                <div class="col-lg-4 my-4">
+                    <div class="cuadro_iniciativas">
+                        <img style="height:220px; width:100%" src="{{iniciativa.data.imagen}}">
+                        <div class="texto_cuadro">
+                            <h3>{{iniciativa.data.title}}</h3>
+                            <p>{{iniciativa.data.descripcion}}</p>
+                            <br>
+                            <a href="{{iniciativa.data.link}}" class="ver_todo">Más info</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="col-lg-12 text-center my-6">
+                    <a class="btn" href="/iniciativas/index.html">Ver todas las iniciativas</a>
+                </div>
+
+            </div>
         </div>
     </div>
-
-    <!--CONTENIDO-->
     <!-- ¿Qué es Justicia Abierta?>
     <div class="section " style="padding-top:65px!important; background-color: #e9ecf2;margin: 0!important;">
         <div class="container">
@@ -268,42 +304,7 @@ permalink: "index.html"
         </div>
     </div>
 
-    <!-- Ciclo de Justicia Abierta-->
-    <div class="section m-0">
-        <div class="container my-6">
-            <div class="row">
-                <div class="col-xl-12 text-center">
-
-                    <h1>Iniciativas</h1>
-                    <h6>Conoce las iniciativas desarrolladas por Red Ciudadana para promover una justicia abierta.
-                    </h6>
-
-                </div>
-            </div>
-
-            <div class="row py-4 my-4">
-
-                {% for iniciativa in collections.iniciativas | limit(3) %}
-                <div class="col-lg-4 my-4">
-                    <div class="cuadro_iniciativas">
-                        <img style="height:220px; width:100%" src="{{iniciativa.data.imagen}}">
-                        <div class="texto_cuadro">
-                            <h3>{{iniciativa.data.title}}</h3>
-                            <p>{{iniciativa.data.descripcion}}</p>
-                            <br>
-                            <a href="{{iniciativa.data.link}}" class="ver_todo">Más info</a>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-
-                <div class="col-lg-12 text-center my-6">
-                    <a class="btn" href="/iniciativas/index.html">Ver todas las iniciativas</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    
 
 {% endblock %}
 
