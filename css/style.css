@@ -17078,3 +17078,29 @@ label.checkbox { padding-left: 20px; }
 	color: #ddd;
 	margin-bottom: 0px!important;
 }
+
+.cuadro_iniciativa{
+	display: flex;
+	padding: 15px;
+}
+
+.cuadro_iniciativa img{
+	width: 250px;
+}
+
+.cuadro_iniciativa div{
+	padding: 25px;
+}
+
+.cuadro_iniciativa div h4{
+	text-align: left!important;
+}
+
+.cuadro_video iframe{
+	width: 100%;
+	height: 180px;
+}
+
+.cuadro_video p{
+	text-align: center;
+}
