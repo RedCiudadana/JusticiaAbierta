@@ -1,0 +1,38 @@
+---
+permalink: videos/index.html
+---
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>Justicia Abierta | Videos</title>
+<link rel="stylesheet" href="/css/main.css" type="text/css" />
+{% endblock %}
+
+{% block content %}
+
+    <!--SLIDER-->  
+    <div class="w-100 py-6 slider-iniciativas" >
+        <div class="container py-5 my-6" >
+            <div class="row mx-auto justify-content-center py-6">
+                <h1 class="text-white py-6">Videos</h1>
+            </div>
+        </div>
+    </div>  
+
+     <!-- Ciclo de Justicia Abierta-->
+    <div class="section m-0" >
+        <div class="container my-6">
+            <div class="row">
+                
+                {% for video in collections.videos %}
+                <div class="col-lg-4 cuadro_video">
+                    {{video.data.link | safe}}
+                    <p>{{video.data.descripcion}}</p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
