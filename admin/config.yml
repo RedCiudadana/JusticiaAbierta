@@ -30,9 +30,9 @@ collections:
       - { name: "imagen", label: "Imagen de Iniciativa", widget: "image" }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
       - { name: "link", label: "Link Iniciativa" }
-  - name: "novedades" # Used in routes, e.g., /admin/collections/blog
-    label: "Novedades" # Used in the UI
-    folder: "src/novedades" # The path to the folder where the documents are stored
+  - name: "cursos" # Used in routes, e.g., /admin/collections/blog
+    label: "Cursos" # Used in the UI
+    folder: "src/cursos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
