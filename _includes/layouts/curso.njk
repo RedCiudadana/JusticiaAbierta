@@ -26,7 +26,7 @@
             {{ title }}
           </h1>
           <br>
-          <h6 class=" font-bold text-1xl text-gray-800" style="color:#46495F!important">
+          <h6 class=" font-bold text-1xl text-gray-800" style="color:#46495F!important;text-align:left!important">
             {{ description }}
           </h6>
           <br>
@@ -99,20 +99,16 @@
 
             {% for curso in collections.cursos | reverse | limit(4)%}
             {% if page.url !== curso.url %}
-            <div class="col-lg-4">
-
-                <a href="{{ curso.url }}" class="flex border-b-2 pb-4 mb-4 text-current">
-                    <img src="{{ curso.data.image }}" alt="Evento" class="w-36 mb-2">
-                    <div class="pl-8 my-auto">
-                    <h5 class="font-bold text-lg">
-                        {{ curso.data.title }}
-                    </h5>
-                    <span class="text-sm">
-                        {{ curso.data.description }} 
-                    </span>
+            <div class="col-lg-4 my-4">
+                <div class="cuadro_iniciativas">
+                    <img style="height:220px; width:100%" src="{{curso.data.image}}">
+                    <div class="texto_cuadro">
+                        <h3>{{curso.data.title}}</h3>
+                        <p>{{curso.data.descripcion}}</p>
+                        <br>
+                        <a href="{{curso.url}}" class="ver_todo">Más info</a>
                     </div>
-                </a>
-
+                </div>
             </div>
             {% endif %}
             {% endfor %}
