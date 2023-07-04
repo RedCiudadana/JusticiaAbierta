@@ -1709,7 +1709,7 @@ label {
 
 .lang-icon > a {
   font-size: 18px;
-  color: #233f4d;
+  color: rgba(0, 0, 0, 0.5);
   margin-left: 5px;
   font-weight: 600;
  }
