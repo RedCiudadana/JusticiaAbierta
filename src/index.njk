@@ -151,10 +151,10 @@ permalink: "index.html"
                         {% for iniciativa in collections.iniciativas | limit(4)%}
                             <a href="{{iniciativa.data.url}}" target="_blank">
                                 <div class="col-lg-12 cuadro_iniciativa">
-                                    <img src="{{iniciativa.data.imagen}}">
+                                    <img src="{{iniciativa.data.image}}">
                                     <div>
                                         <h4>{{iniciativa.data.title}}</h6>
-                                        <p>{{iniciativa.data.descripcion}}</p>
+                                        <p>{{iniciativa.data.description}}</p>
                                     </div>
                                 </div>
                             </a>

@@ -26,10 +26,20 @@ collections:
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
-      - { name: "title", label: "Título de Iniciativas" }
-      - { name: "imagen", label: "Imagen de Iniciativa", widget: "image" }
-      - { name: "descripcion", label: "Descripción", widget: "markdown" }
-      - { name: "link", label: "Link Iniciativa" }
+      - { name: "title", label: "Title" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { name: "description", label: "Description" }
+      - { name: "autor", label: "Autor" }
+      - { name: "correo", label: "Correo" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display posts in home's highlights",
+        }
   - name: "cursos" # Used in routes, e.g., /admin/collections/blog
     label: "Cursos" # Used in the UI
     folder: "src/cursos" # The path to the folder where the documents are stored
