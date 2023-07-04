@@ -1,10 +1,10 @@
 ---
-permalink: videos/index.html
+permalink: procesosdeformacion/index.html
 ---
 {% extends "src/base.njk" %}
 
 {% block head %}
-<title>Justicia Abierta | Videos</title>
+<title>Justicia Abierta | Iniciativas</title>
 <link rel="stylesheet" href="/css/main.css" type="text/css" />
 {% endblock %}
 
@@ -18,7 +18,7 @@ permalink: videos/index.html
 
                     <div class="my-6 py-6" style="text-align:center">
 
-                        <h3 class="text-white" style="font-size:35px">Vides</h3>
+                        <h3 class="text-white" style="font-size:35px">Cursos</h3>
 
                     </div>
 
@@ -27,15 +27,22 @@ permalink: videos/index.html
         </div>
     </div>
 
-     <!-- videos -->
+     <!-- Ciclo de Justicia Abierta-->
     <div class="section m-0" >
         <div class="container my-6">
             <div class="row">
                 
-                {% for video in collections.videos %}
-                <div class="col-lg-4 cuadro_video">
-                    {{video.data.link | safe}}
-                    <p>{{video.data.descripcion}}</p>
+                {% for curso in collections.cursos %}
+                <div class="col-lg-4 my-4">
+                    <div class="cuadro_iniciativas">
+                        <img style="height:220px; width:100%" src="{{curso.data.image}}">
+                        <div class="texto_cuadro">
+                            <h3>{{curso.data.title}}</h3>
+                            <p>{{curso.data.description}}</p>
+                            <br>
+                            <a href="{{curso.url}}" class="ver_todo">Más info</a>
+                        </div>
+                    </div>
                 </div>
                 {% endfor %}
 
