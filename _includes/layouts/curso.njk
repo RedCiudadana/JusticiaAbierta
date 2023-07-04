@@ -97,7 +97,7 @@
             <h2 class="font-bold text-xl border-b-2 border-yellow-500 mb-4 pb-4" style="border-color:#46495F">Más Cursos</h2>
         </div>
 
-            {% for curso in collections.cursos | reverse | limit(4)%}
+            {% for curso in collections.cursos | reverse | limit(3)%}
             {% if page.url !== curso.url %}
             <div class="col-lg-4 my-4">
                 <div class="cuadro_iniciativas">
