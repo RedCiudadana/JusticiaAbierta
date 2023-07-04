@@ -35,12 +35,12 @@ permalink: iniciativas/index.html
                 {% for iniciativa in collections.iniciativas %}
                 <div class="col-lg-4 my-4">
                     <div class="cuadro_iniciativas">
-                        <img style="height:220px; width:100%" src="{{iniciativa.data.imagen}}">
+                        <img style="height:220px; width:100%" src="{{iniciativa.data.image}}">
                         <div class="texto_cuadro">
                             <h3>{{iniciativa.data.title}}</h3>
-                            <p>{{iniciativa.data.descripcion}}</p>
+                            <p>{{iniciativa.data.description}}</p>
                             <br>
-                            <a href="{{iniciativa.data.link}}" class="ver_todo">Más info</a>
+                            <a href="{{iniciativa.url}}" class="ver_todo">Más info</a>
                         </div>
                     </div>
                 </div>
