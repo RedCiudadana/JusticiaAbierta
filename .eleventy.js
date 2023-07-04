@@ -1,4 +1,5 @@
 const rmj = require('render-markdown-js');
+const moment = require("moment");
 
 
 module.exports = function (eleventyConfig) {
@@ -11,6 +12,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('admin');
     eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('ELEMENTOS');
+    eleventyConfig.addPassthroughCopy('_includes');
 
     eleventyConfig.addNunjucksFilter("rmj", function (content) {
         return rmj(content);
@@ -30,6 +32,10 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addCollection("propuestas", function (collectionApi) {
         return collectionApi.getFilteredByTag('propuestas');
+    });
+
+    eleventyConfig.addFilter("dateFormat", function(date, format) {
+        return moment(date).format(format);
     });
 
 }

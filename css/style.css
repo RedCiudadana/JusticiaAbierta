@@ -17104,3 +17104,11 @@ label.checkbox { padding-left: 20px; }
 .cuadro_video p{
 	text-align: center;
 }
+
+.content-curso ul{
+	margin-left:20px
+}
+
+.content-curso li{
+	list-style: disc;
+}
