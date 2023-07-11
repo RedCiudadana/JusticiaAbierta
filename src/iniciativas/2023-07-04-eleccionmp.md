@@ -1,6 +1,6 @@
 ---
 title: EleccionMP
-image: /assets/uploads/ja-31.png
+image: /assets/uploads/proyectos-red-19.png
 description: El proyecto EleccionMP se enfoca en el monitoreo de la elección del
   fiscal general del Ministerio Público en Guatemala.
 autor: Red Ciudadana
