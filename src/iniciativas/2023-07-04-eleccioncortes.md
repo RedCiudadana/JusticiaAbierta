@@ -1,6 +1,6 @@
 ---
 title: EleccionCortes
-image: /assets/uploads/ja-33.png
+image: /assets/uploads/proyectos-red-11.png
 description: Al igual que el proyecto EleccionMP, la iniciativa EleccionCortes
   se dedica al monitoreo de la elección de las cortes en Guatemala.
 autor: Red Ciudadana
