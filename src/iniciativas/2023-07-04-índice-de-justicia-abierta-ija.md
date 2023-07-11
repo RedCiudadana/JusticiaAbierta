@@ -1,6 +1,6 @@
 ---
 title: Índice de Justicia Abierta (IJA)
-image: /assets/uploads/ja-32.png
+image: /assets/uploads/proyectos-red-14.png
 description: El Índice de Justicia Abierta es una valiosa herramienta de
   evaluación y medición que se utiliza para evaluar la implementación de la
   justicia abierta en las instituciones del sector justicia en Guatemala.
