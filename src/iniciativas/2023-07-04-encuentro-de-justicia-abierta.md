@@ -1,6 +1,6 @@
 ---
 title: Encuentro de Justicia Abierta
-image: /assets/uploads/ja-34.png
+image: /assets/uploads/proyectos-red-15.png
 description: El Encuentro de Justicia Abierta es una iniciativa que tiene como
   objetivo promover el intercambio de conocimientos, experiencias y mejores
   prácticas en el ámbito de la justicia abierta. Este encuentro reúne a diversos
