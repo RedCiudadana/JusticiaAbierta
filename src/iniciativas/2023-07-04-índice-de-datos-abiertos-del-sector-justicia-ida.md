@@ -1,6 +1,6 @@
 ---
 title: Índice de Datos Abiertos del Sector Justicia (IDA)
-image: /assets/uploads/placeholder.png
+image: /assets/uploads/proyectos-red-20.png
 description: El Índice de Datos Abiertos del Sector Justicia (IDA) es una
   herramienta que tiene como objetivo evaluar y medir el grado de apertura y
   accesibilidad de los datos relacionados con el sector justicia en Guatemala.
