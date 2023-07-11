@@ -1,6 +1,6 @@
 ---
 title: Portal de Datos Abiertos Justicia
-image: /assets/uploads/placeholder.png
+image: /assets/uploads/proyectos-red-21.png
 description: El Portal de Datos Abiertos Justicia es una plataforma en línea
   diseñada para promover la apertura y accesibilidad de los datos relacionados
   con el sector justicia en Guatemala.
