@@ -1,6 +1,6 @@
 ---
 title: Justiciapedia
-image: /assets/uploads/ja-24.png
+image: /assets/uploads/proyectos-red-12.png
 description: Justiciapedia es un proyecto innovador que tiene como objetivo
   proporcionar una descripción detallada de las instituciones y los funcionarios
   del sector justicia en Guatemala.
