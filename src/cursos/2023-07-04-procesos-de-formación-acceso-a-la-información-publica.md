@@ -11,16 +11,12 @@ highlight: false
 ---
 ![](/assets/uploads/c_formacion_post_02.png)
 
-
-
 <!--StartFragment-->
 
 El acceso a la información es un pilar fundamental de la democracia y la toma de decisiones informadas. Si estás interesado en aprender cómo acceder y utilizar datos valiosos de manera efectiva, nuestro proceso de formación de Acceso a la Información, programado para los días 8 y 15 de noviembre de 2023, es perfecto para ti. En Red Ciudadana y RIJA, creemos que el acceso a la información empodera a los ciudadanos y promueve la transparencia en todas las esferas de la sociedad.
-
-
 
 **R﻿egistro:**
 
 <!--EndFragment-->
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfi13SGHb0AFU6bLvtiHvpgZDjRHDTS32l9GkYN2grX9ldFwA/viewform?embedded=true" width="700" height="1909" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWt281FSnLoskrrOn5FzR14rWHsvuk1uDc5nlEH980n-zD6w/viewform?embedded=true" width="700" height="1909" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
