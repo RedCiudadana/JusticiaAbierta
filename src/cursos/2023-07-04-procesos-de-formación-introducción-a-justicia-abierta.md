@@ -9,14 +9,16 @@ correo: info@redciudadana.org.gt
 date: 2023-07-04T16:06:02.654Z
 highlight: false
 ---
-El proceso de Justicia Abierta es un enfoque integral que busca promover la transparencia, la participación ciudadana y la colaboración en el sistema de justicia. A través de una serie de etapas y acciones estratégicas, se pretende fortalecer la confianza en las instituciones judiciales y garantizar un acceso equitativo a la justicia. A continuación, se describe el proceso de Justicia Abierta en Guatemala.
+![](/assets/uploads/c_formacion_post_01.png)
 
-* **Diagnóstico y Análisis:** El proceso de Justicia Abierta comienza con un diagnóstico y análisis exhaustivo del sistema de justicia en Guatemala. Se lleva a cabo una evaluación de las fortalezas y debilidades del sistema, identificando los desafíos y las áreas de mejora. Esto se realiza a través de la recopilación de datos, el análisis de estadísticas judiciales, la revisión de normativas y la consulta con expertos y actores relevantes en el sector.
-* **Definición de Objetivos:** Una vez completado el diagnóstico, se definen los objetivos específicos del proceso de Justicia Abierta. Estos objetivos pueden incluir la mejora de la transparencia en los procesos judiciales, el fortalecimiento de la participación ciudadana en la toma de decisiones y la promoción de la rendición de cuentas de los actores judiciales. Los objetivos deben ser claros, medibles y alcanzables.
-* **Desarrollo de Estrategias:** Con base en los objetivos definidos, se desarrollan estrategias específicas para promover la Justicia Abierta. Estas estrategias pueden incluir la implementación de políticas de transparencia, la capacitación de jueces y funcionarios judiciales en temas de Justicia Abierta, la promoción de la participación ciudadana y la mejora de los canales de comunicación entre el sistema de justicia y la sociedad civil.
-* **Implementación de Acciones:** Una vez establecidas las estrategias, se procede a implementar las acciones correspondientes. Esto puede implicar la creación de unidades especializadas en Justicia Abierta dentro de las instituciones judiciales, el diseño e implementación de programas de capacitación, la adopción de tecnologías de información para mejorar la transparencia y el acceso a la justicia, y la promoción de alianzas con organizaciones de la sociedad civil y otros actores relevantes.
-* **Monitoreo y Evaluación:** Durante todo el proceso de Justicia Abierta, se realiza un monitoreo constante para evaluar el progreso y los resultados obtenidos. Se establecen indicadores de medición y se recopila información relevante para evaluar el impacto de las acciones implementadas. Esto permite realizar ajustes y mejoras en el proceso, garantizando la efectividad de las medidas adoptadas.
-* **Divulgación y Comunicación:** La divulgación y comunicación efectiva son fundamentales para el éxito del proceso de Justicia Abierta. Se busca informar a la sociedad sobre los avances realizados, los logros obtenidos y los beneficios de una justicia más abierta y transparente. Se utilizan diferentes canales de comunicación, como medios de comunicación, redes sociales y eventos públicos, para difundir los mensajes clave y promover la participación ciudadana en el proceso.
-* **Evaluación y Retroalimentación:** El proceso de Justicia Abierta es un proceso continuo y dinámico. Se realizan evaluaciones periódicas para analizar los resultados obtenidos y recopilar retroalimentación de los actores involucrados, incluyendo la sociedad civil, los usuarios del sistema de justicia y los funcionarios judiciales. Esta retroalimentación es clave para realizar ajustes y mejoras en el proceso, asegurando su relevancia y efectividad a lo largo del tiempo.
 
-El proceso de Justicia Abierta es un esfuerzo conjunto entre las instituciones judiciales, la sociedad civil y otros actores relevantes en el sector de justicia. Busca transformar el sistema de justicia en uno más transparente, accesible y confiable, fortaleciendo la confianza en las instituciones judiciales y garantizando un acceso equitativo a la justicia para todos los ciudadanos. A través de un enfoque integral y sistemático, se busca promover una justicia abierta y participativa que responda a las necesidades de la sociedad y contribuya al desarrollo del país.
+
+<!--StartFragment-->
+
+La Justicia Abierta es mucho más que una idea; es un principio fundamental que impulsa la transparencia y la participación en las instituciones judiciales. En Red Ciudadana y la Red Internacional de Justicia Abierta (RIJA), estamos emocionados de invitarte a nuestro proceso de formación de Justicia Abierta que se llevará a cabo los días 9 y 16 de noviembre de 2023. En este viaje, explorarás los conceptos, prácticas y herramientas que hacen que la Justicia Abierta sea esencial para construir sociedades justas y equitativas.
+
+<!--EndFragment-->
+
+**R﻿egistro:**
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScichZTfPKsTCdQ3Yr7cAwbsW0xaXXHkpy7O7ZbUXIx1OlbKA/viewform?embedded=true" width="640" height="1909" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
