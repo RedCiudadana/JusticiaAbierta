@@ -9,7 +9,8 @@
      "titulo": "Proyecto 1",
      "resumen": "Desarrollar e implementar una guía de buenas prácticas y recomendaciones para fometar la participación y colaboración ciudadana en el sector justicia. ",
      "encuentro": "Si",
-     "terminos": "Si"
+     "terminos": "Si",
+     "avances": "Estos son los avances del proyecto"
     },
     {
      "numero_propuesta": 2,
@@ -21,7 +22,8 @@
      "titulo": "Proyecto 2",
      "resumen": "Actualización para abogados y funcionarios públicos, campaña de redes sociales, podcast y actividades presenciales, construcción de capacidades para sociedad civil, capacitaciones sobre uso y procesamiento de datos abiertos. ",
      "encuentro": "Si",
-     "terminos": "Si"
+     "terminos": "Si",
+     "avances": "Estos son los avances del proyecto"
     },
     {
      "numero_propuesta": 3,
@@ -33,7 +35,8 @@
      "titulo": "Proyecto 3",
      "resumen": "Crear y aprobar una ley que regule el marco legal de datos abiertos, es decir: que los datos publicados sean primarios, accesibles, completos, procesables por máquinas y no discriminados.",
      "encuentro": "Si",
-     "terminos": "Si"
+     "terminos": "Si",
+     "avances": "Estos son los avances del proyecto"
     },
     {
      "numero_propuesta": 4,
@@ -45,7 +48,8 @@
      "titulo": "Proyecto 4",
      "resumen": "Capacitar al personal de las instituciones para que puedan hacer un buen uso de las herramientas para el acceso a la información, y poder también definir los objetivos de dicha capacitación.",
      "encuentro": "Si",
-     "terminos": "Si"
+     "terminos": "Si",
+     "avances": "Estos son los avances del proyecto"
     },
     {
      "numero_propuesta": 5,
@@ -57,6 +61,7 @@
      "titulo": "Proyecto 5",
      "resumen": "Una serie de capacitaciones que permita que los profeisonales del sector justicia puedan desarrollar nuevas habilidades y conocimientos, para que peudan enfocarse en promover el acceso a la Justicia en sus comunidades",
      "encuentro": "Si",
-     "terminos": "Si"
+     "terminos": "Si",
+     "avances": "Estos son los avances del proyecto"
     }
 ]

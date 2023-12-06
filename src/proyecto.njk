@@ -68,12 +68,17 @@ tags:
                                 <div class="single-content">
                                     <div class="row">
                                         <div class="col-xl-10 col-lg-12 m-auto texto-servicio">
-                                            <p>{{ proyectos.resumen | rmj |safe}}</p>
                                             <h4 class="text-left">El Problema</h4>
                                             <p>{{ proyectos.problema | rmj |safe}}</p>
                                             <div class="linea_azul"></div>
                                             <h4 class="text-left">Dirigido hacia</h4>
                                             <p>{{proyectos.dirigido | rmj |safe}}</p>
+                                            <div class="linea_azul"></div>
+                                            <h4 class="text-left">Solución Propuesta</h4>
+                                            <p>{{proyectos.resumen | rmj |safe}}</p>
+                                            <div class="linea_azul"></div>
+                                            <h4 class="text-left">Avances</h4>
+                                            <p>{{proyectos.avances | rmj |safe}}</p>
                                             
                                             <!--a class="btn mb-20" href="#" target="_blank">Apoyar</a-->
 
