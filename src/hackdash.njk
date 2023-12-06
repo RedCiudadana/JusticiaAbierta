@@ -46,6 +46,8 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
                 {% set cuenta = cuenta + 1 %}
                 {% endfor %}
 
+                
+
                 <div class="col-lg-12 my-4 text-center"> 
                     
                     {% if cuenta == 1%}
@@ -59,20 +61,20 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
                 </div>
                 
 
-                <!--div class="col-lg-12 my-4"> 
+                <div class="col-lg-12 my-4"> 
                     <coleccion de filtros>
                     <div class="row">
                         {% for categoria in collections.categorias %}
                         <a href="{{categoria.url}}" class="filtros my-1">{{categoria.data.title}}</a>
                         {% endfor %}
                     </div>
-                </div-->
+                </div>
 
                 {% for proyecto in proyectos %}
                     {% if proyecto.data.proyectos.encuentro == "Si" %}
 
                     <div class="col-lg-4 my-4">
-                        <div class="cuadro_propuesta">
+                        <div class="cuadro_propuesta3">
                             <div class="tags">
                                 <a href="/categorias/{{proyecto.data.proyectos.categoria | slug}}" class="filtros">{{proyecto.data.proyectos.categoria}}</a>
                             </div>
@@ -105,7 +107,7 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
                     {% if proyecto.data.proyectos.encuentro == "No" %}
 
                     <div class="col-lg-4 my-4">
-                        <div class="cuadro_propuesta">
+                        <div class="cuadro_propuesta3">
                             <div class="tags">
                                 <a href="/categorias/{{proyecto.data.proyectos.categoria | slug}}" class="filtros">{{proyecto.data.proyectos.categoria}}</a>
                             </div>

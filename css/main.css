@@ -6348,6 +6348,133 @@ optgroup{
   color: #006BE3!important;
 }
 
+.cuadro_propuesta3{
+  border-radius: 10px;
+  border: 2px solid #006BE3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cuadro_propuesta3::before{
+  position:absolute;
+  top:3px;
+  right:-7px;
+  display: block;
+  box-sizing:border-box;
+  content:"Hackathon";
+  text-transform:uppercase;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  text-align:center;
+  font-weight: 700;
+  color: #fff;
+  background: transparent; 
+  height:0;
+  width:150px;                      
+  border:30px solid transparent;
+  border-bottom:30px solid #006BE3;
+  line-height:25px;
+  transform: rotate(45deg);
+}
+
+.cuadro_propuesta3 .tags{
+  padding: 5%;
+}
+
+.cuadro_propuesta3 .numero_propuesta{
+  padding-top: 5%;
+  padding-left: 5%;
+  text-transform: uppercase;
+}
+
+.cuadro_propuesta3 .numero_propuesta p{
+  color: #92939E!important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cuadro_propuesta3 .contenido{
+  padding: 0 5% 5% 5%;
+}
+
+.cuadro_propuesta3 .contenido p{
+  color: #92939E!important;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.cuadro_propuesta3 .bottom{
+  padding: 5%;
+  background-color: #006BE3;
+  border-color: #006BE3;
+  width: 101%;
+  margin-left: -0.5%;
+  margin-bottom: -0.5%;
+  border-bottom-left-radius: 10px;;
+  border-bottom-right-radius: 10px;;
+}
+
+.cuadro_propuesta3 .bottom .candidaturas{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro_propuesta3 .bottom .candidaturas h4{
+  color: #fff!important;
+  margin-right: 6px;
+}
+
+.cuadro_propuesta3 .bottom .ciudadanos{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro_propuesta3 .bottom .ciudadanos h4{
+  color: #fff!important;
+  margin-right: 6px;
+}
+
+.cuadro_propuesta3 .bottom .botones_finales{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cuadro_propuesta3 .bottom .botones_finales .apoyar{
+  background-color: #13C992;
+  color: #fff!important;
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.cuadro_propuesta3 .bottom .botones_finales .apoyar:hover{
+  background-color: #fff;
+  color: #13C992!important;
+}
+
+.cuadro_propuesta3 .bottom .botones_finales .vermas{
+  background-color: #025fa5;
+  color: #fff!important;
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.cuadro_propuesta3 .bottom .botones_finales .vermas:hover{
+  background-color: #fff;
+  color: #006BE3!important;
+}
+
 .cuadro_propuesta2{
   border-radius: 10px;
   border: 2px solid #006BE3;
