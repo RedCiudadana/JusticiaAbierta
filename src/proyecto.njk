@@ -30,7 +30,7 @@ tags:
                                 
                                 <div class="sidebar-widget widget-category-2 mb-50">
                                     <h5 class="section-title style-1 mb-30">Detalles de Proyecto</h5>
-                                    <ul>
+                                    <ul class="list">
                                         <li>           
                                             <a href="#"> <img style="width:30px;height:30px" src="/ELEMENTOS/PROPUESTAS JA_02-15.png" alt="" />Categoría: {{ proyectos.categoria }}</a>
                                         </li>
@@ -43,6 +43,10 @@ tags:
                                         
                                         <li>
                                             <a style="pointer-events:none" href="#"> <img style="width:30px;height:30px" src="/ELEMENTOS/PROPUESTAS JA_02-17.png" alt="" />¿Esta propuesta es producto de un Encuentro Ciudadano?: {{ proyectos.encuentro }}</a>
+                                        </li>
+
+                                        <li>
+                                            <a style="pointer-events:none" href="#"> Proyecto propuesto por: {{ proyectos.Nombre }}</a>
                                         </li>
                                     </ul>
                                 </div>

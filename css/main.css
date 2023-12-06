@@ -6534,3 +6534,18 @@ padding: 10px;
     background-size:cover;
   }
 }
+
+.list{
+  border: 2px solid #016be3;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.list li{
+  border-bottom: 1px solid #016be3;
+  padding: 10px 0;
+}
+
+.list li:last-child{
+  border-bottom: none;
+}
