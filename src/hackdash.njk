@@ -1,8 +1,8 @@
 ---
 pagination:
-  data: collections.propuestas
+  data: collections.proyectos
   size: 12
-  alias: propuestas
+  alias: proyectos
 permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
 ---
 
@@ -26,6 +26,9 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
                         </p>
                         <br>
                         <a class="btn" href="/nuevoproyecto/index.html">Crear nuevo proyecto</a>
+                        <br>
+                        <br>
+                        <a class="btn" href="/prop_data.json" target="_blank">Datos Abiertos</a>
                     </div>
 
                 </div>
@@ -33,13 +36,13 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
         </div>
     </div>
 
-     <!-- propuestas -->
+     <!-- proyectos -->
     <div class="section my-6">
         <div class="container">
             <div class="row ">
 
                 {% set cuenta = 0 %}
-                {% for propuesta in collections.propuestas%}
+                {% for proyecto in collections.proyectos%}
                 {% set cuenta = cuenta + 1 %}
                 {% endfor %}
 
@@ -65,20 +68,20 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
                     </div>
                 </div-->
 
-                {% for prop in propuestas %}
-                    {% if prop.data.propuestas.encuentro == "Si" %}
+                {% for proyecto in proyectos %}
+                    {% if proyecto.data.proyectos.encuentro == "Si" %}
 
                     <div class="col-lg-4 my-4">
                         <div class="cuadro_propuesta">
                             <div class="tags">
-                                <a href="/categorias/{{prop.data.propuestas.categoria | slug}}" class="filtros">{{prop.data.propuestas.categoria}}</a>
+                                <a href="/categorias/{{proyecto.data.proyectos.categoria | slug}}" class="filtros">{{proyecto.data.proyectos.categoria}}</a>
                             </div>
                             <div class="numero_propuesta">
-                                <p>propuesta N.{{prop.data.propuestas.numero_propuesta}}</p>
+                                <p>propuesta N.{{proyecto.data.proyectos.numero_propuesta}}</p>
                             </div>
                             <div class="contenido">
-                                <h5>{{prop.data.propuestas.titulo}}</h5>
-                                <p>{{prop.data.propuestas.resumen}}</p>
+                                <h5>{{proyecto.data.proyectos.titulo}}</h5>
+                                <p>{{proyecto.data.proyectos.resumen}}</p>
                             </div>
                             <div class="bottom">
                                 <!--div class="candidaturas">
@@ -91,7 +94,7 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
                                 </div-->
                                 <div class="botones_finales">
                                     <!--a href="#" class="apoyar"><i class="fa-solid fa-heart" style="margin-right:4px"></i>Apoyar</a-->
-                                    <a href="{{prop.url}}" class="vermas">Leer más</a>
+                                    <a href="{{proyecto.url}}" class="vermas">Leer más</a>
                                 </div>
                             </div>
                         </div>
@@ -99,19 +102,19 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
 
                     {% endif %}
 
-                    {% if prop.data.propuestas.encuentro == "No" %}
+                    {% if proyecto.data.proyectos.encuentro == "No" %}
 
                     <div class="col-lg-4 my-4">
                         <div class="cuadro_propuesta">
                             <div class="tags">
-                                <a href="/categorias/{{prop.data.propuestas.categoria | slug}}" class="filtros">{{prop.data.propuestas.categoria}}</a>
+                                <a href="/categorias/{{proyecto.data.proyectos.categoria | slug}}" class="filtros">{{proyecto.data.proyectos.categoria}}</a>
                             </div>
                             <div class="numero_propuesta">
-                                <p>propuesta N.{{prop.data.propuestas.numero_propuesta}}</p>
+                                <p>propuesta N.{{proyecto.data.proyectos.numero_propuesta}}</p>
                             </div>
                             <div class="contenido">
-                                <h5>{{prop.data.propuestas.titulo}}</h5>
-                                <p>{{prop.data.propuestas.resumen}}</p>
+                                <h5>{{proyecto.data.proyectos.titulo}}</h5>
+                                <p>{{proyecto.data.proyectos.resumen}}</p>
                             </div>
                             <div class="bottom">
                                 <!--div class="candidaturas">
@@ -124,7 +127,7 @@ permalink: "hackdash/page-{{ pagination.pageNumber + 1}}/index.html"
                                 </div-->
                                 <div class="botones_finales">
                                     <!--a href="#" class="apoyar"><i class="fa-solid fa-heart" style="margin-right:4px"></i>Apoyar</a-->
-                                    <a href="{{prop.url}}" class="vermas">Leer más</a>
+                                    <a href="{{proyecto.url}}" class="vermas">Leer más</a>
                                 </div>
                             </div>
                         </div>

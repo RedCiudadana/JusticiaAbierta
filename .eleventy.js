@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.setTemplateFormats("njk,md,html");
     
+    eleventyConfig.addPassthroughCopy('jsons');
     eleventyConfig.addPassthroughCopy('src');
     eleventyConfig.addPassthroughCopy('css');
     eleventyConfig.addPassthroughCopy('js');
@@ -32,6 +33,10 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addCollection("propuestas", function (collectionApi) {
         return collectionApi.getFilteredByTag('propuestas');
+    });
+
+    eleventyConfig.addCollection("proyectos", function (collectionApi) {
+        return collectionApi.getFilteredByTag('proyectos');
     });
 
     eleventyConfig.addFilter("dateFormat", function(date, format) {
