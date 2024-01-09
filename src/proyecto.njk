@@ -30,24 +30,28 @@ tags:
                                 
                                 <div class="sidebar-widget widget-category-2 mb-50">
                                     <h5 class="section-title style-1 mb-30">Detalles de Proyecto</h5>
-                                    <ul class="list">
+                                    <ul class="list" style="border: none!important;">
                                         <li>           
                                             <a href="#"> <img style="width:30px;height:30px" src="/ELEMENTOS/PROPUESTAS JA_02-15.png" alt="" />Categoría: {{ proyectos.categoria }}</a>
                                         </li>
+                          
                                         <!--li>
                                             <a style="pointer-events:none" href="#"> <img style="width:30px;height:30px" src="/assets/01_ICONOS/PROPUESTAS JA_02-18.png" alt="" />Plazo: {{tiempo}}</a>
                                         </li-->
                                         <li>
                                             <a style="pointer-events:none" href="#"> <img style="width:24px;height:30px;margin-right:23px" src="/ELEMENTOS/ICONO.png" alt="" />Ubicación: {{ proyectos.departamento }}</a>
                                         </li>
+                            
                                         
                                         <li>
                                             <a style="pointer-events:none" href="#"> <img style="width:30px;height:30px" src="/ELEMENTOS/PROPUESTAS JA_02-17.png" alt="" />¿Este proyecto es producto de un Evento de Innovación?: {{ proyectos.encuentro }}</a>
                                         </li>
+                               
 
                                         <li>
                                             <a style="pointer-events:none" href="#"> Proyecto propuesto por: {{ proyectos.Nombre }}</a>
                                         </li>
+
                                     </ul>
                                 </div>
 
@@ -86,9 +90,11 @@ tags:
                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/gU6sa65YEeM?si=ombFuruaj0OsJ2fd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                             
                                             <div class="linea_azul"></div>
-                                            <a class="btn mb-20" href="https://redciudadana.org/" target="_blank">Recursos</a>
-                                            <br>
-                                            <a class="btn mb-20" href="#" target="_blank">Solicitar Mentoría</a>
+                                            <div class="d-flex">
+                                                <a class="btn mb-20 mr-1" href="https://redciudadana.org/" target="_blank">Recursos</a>
+                                                <a class="btn mb-20" href="#" target="_blank">Solicitar Mentoría</a>
+                                            </div>
+                                            
                                             <!--Comment form-->
                                             <div class="comment-form ">
                                                 <!--DISQUSS-->
