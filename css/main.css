@@ -6722,3 +6722,8 @@ padding: 10px;
 .list li:last-child{
   border-bottom: none;
 }
+
+#map {
+  height: 100%;
+  width: 100%;
+}

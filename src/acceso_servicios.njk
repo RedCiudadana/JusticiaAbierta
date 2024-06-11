@@ -1,0 +1,55 @@
+---
+permalink: "/acceso_servicios/index.html"
+---
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>Justicia Abierta | Acceso a Servicios</title>
+<link rel="stylesheet" href="/css/main.css" type="text/css" />
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjh2zLXt_Datn2dpkftGIyarQklF3IhOg&callback=initMap" async></script>
+<script src="/js/mapa.js" defer></script>
+{% endblock %}
+
+{% block content %}
+    <div class="section m-0 py-6" style="background-image:url('/ELEMENTOS/ELEMENTOS MEJORAS_JA/SLIDER/JA-18.png');background-repeat: no-repeat;background-size: 100% 100%;">
+        <div class="container">
+            <div class="row my-6 py-6">
+                <div class="col-lg-6 d-flex" style="align-items:center">
+                    <div class="my-6" style="text-align:left">
+                        <h3 class="text-white notranslate" style="font-size:40px; margin-bottom:5px">Acceso a Servicios </h3>
+                        <h3 class="text-white" style="font-size:28px;font-weight:400;line-height:32px">Mapa Interactivo de Acceso a Servicios de Justicia para Mujeres</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="my-6" style="text-align:center">
+                        <img style="padding:15px" src="/ELEMENTOS/ELEMENTOS MEJORAS_JA/SLIDER/JA-17.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section m-0">
+        <div class="container my-6">
+            <div class="row">
+                <div class="col-xl-12 my-4 text-center">
+                    <h1>¿Qué se busca?</h1>
+                    <p>
+                        Este proyecto consiste en la creación de un mapa interactivo que proporciona información 
+                        detallada sobre la ubicación y los servicios ofrecidos por instituciones de justicia 
+                        especializadas en atención a mujeres y diversidades de género en Guatemala. El mapa 
+                        tiene como objetivo facilitar el acceso a información crítica para las víctimas de violencia 
+                        de género, mejorando su capacidad para buscar ayuda de manera eficiente y segura. 
+                        La plataforma también pretende aumentar la visibilidad y coordinación entre las distintas 
+                        instituciones de justicia, fortaleciendo la red de apoyo institucional.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
