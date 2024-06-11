@@ -7,9 +7,13 @@ permalink: "/acceso_servicios/index.html"
 {% block head %}
 <title>Justicia Abierta | Acceso a Servicios</title>
 <link rel="stylesheet" href="/css/main.css" type="text/css" />
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjh2zLXt_Datn2dpkftGIyarQklF3IhOg&callback=initMap" async></script>
-<script src="/js/mapa.js" defer></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<style>
+    #map {
+        height: 500px; /* Puedes ajustar la altura según tus necesidades */
+        width: 100%;
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -48,8 +52,25 @@ permalink: "/acceso_servicios/index.html"
                 </div>
             </div>
             <div class="row">
-                <div id="map"></div>
+                <div class="col-lg-12 my-4">
+                    <h1>Nomenclatura del Mapa</h1>
+                    <div class="d-flex align-items-center">
+                        <img style="width: 30px; height: 30px; margin-right: 10px;" src="/ELEMENTOS/institucion.png">
+                        <p class="mb-0">Denota a la institución</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="map"></div>
+                </div>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block body_javascripts %}
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/js/mapa.js"></script>
 {% endblock %}

@@ -1,41 +1,62 @@
-function initMap() {
-    const center = { lat: 15.783471, lng: -90.230759 }; // Centro de Guatemala
+document.addEventListener("DOMContentLoaded", function () {
+    // Crear el mapa
+    var map = L.map('map');
 
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 7,
-        center: center,
+    // Añadir capa de mapa de OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Icono personalizado para las instituciones
+    var institutionIcon = L.icon({
+        iconUrl: '/ELEMENTOS/institucion.png', // Ruta del icono personalizado
+        iconSize: [32, 32], // Tamaño del icono
+        iconAnchor: [16, 32], // Punto del icono que corresponde a la ubicación del marcador
+        popupAnchor: [0, -32] // Punto desde el cual se abrirá el popup
     });
 
-    const institutions = [
-        { name: "Centro de Atención Integral para Mujeres", lat: 14.634915, lng: -90.506882 },
-        { name: "Fundación Sobrevivientes", lat: 14.634993, lng: -90.506821 },
-        // Añade más instituciones aquí
+    // Función para establecer la vista inicial y agregar el marcador de "Estas aquí"
+    function setInitialView(lat, lon) {
+        map.setView([lat, lon], 14); // Nivel de zoom 14 es aproximadamente 5 km
+
+        // Agregar marcador "Estas aquí"
+        var marker = L.marker([lat, lon]).addTo(map);
+        marker.bindPopup('<b>Estás aquí</b>').openPopup();
+    }
+
+    // Geolocalización
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            setInitialView(lat, lon);
+        }, function() {
+            alert("No se pudo obtener su ubicación. Se utilizará la vista predeterminada.");
+            setInitialView(15.7835, -90.2308); // Coordenadas centrales de Guatemala
+        });
+    } else {
+        alert("Geolocalización no soportada por su navegador. Se utilizará la vista predeterminada.");
+        setInitialView(15.7835, -90.2308); // Coordenadas centrales de Guatemala
+    }
+
+    // Datos de las instituciones
+    var instituciones = [
+        { nombre: "Institución 1", coordenadas: [14.59, -90.51], url: "https://example.com/institucion1" },
+        { nombre: "Institución 2", coordenadas: [14.59, -90.49], url: "https://example.com/institucion2" },
+        { nombre: "Institución 3", coordenadas: [14.58, -90.50], url: "https://example.com/institucion3" }
     ];
 
-    institutions.forEach((institution) => {
-        const marker = new google.maps.Marker({
-            position: { lat: institution.lat, lng: institution.lng },
-            map: map,
-            title: institution.name,
-        });
+    // Función para agregar marcadores de instituciones
+    instituciones.forEach(function(institucion) {
+        var marker = L.marker(institucion.coordenadas, { icon: institutionIcon }).addTo(map);
 
-        const infowindow = new google.maps.InfoWindow({
-            content: `<h2>${institution.name}</h2><p>Servicios ofrecidos...</p>`,
-        });
-
-        marker.addListener("click", () => {
-            infowindow.open(map, marker);
-        });
-
-        // Añadir círculo de 5km de radio alrededor de cada institución
-        const circle = new google.maps.Circle({
-            map: map,
-            radius: 5000, // 5 km en metros
-            fillColor: '#AA0000',
-            strokeColor: '#AA0000',
-            strokeOpacity: 0.35,
-            strokeWeight: 2,
-        });
-        circle.bindTo('center', marker, 'position');
+        // Crear contenido del popup con un botón para redirigir
+        var popupContent = `
+            <div class="popup-content">
+                <b>${institucion.nombre}</b><br>
+                <button class="btn" onclick="window.location.href='${institucion.url}'">Ir a la página</button>
+            </div>`;
+        
+        marker.bindPopup(popupContent);
     });
-}
+});
