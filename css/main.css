@@ -6733,3 +6733,11 @@ padding: 10px;
   padding: 20px;
   box-sizing: border-box;
 }
+
+.listv2{
+  margin-left: 15px;
+}
+
+.listv2 li{
+  list-style: circle;
+}
