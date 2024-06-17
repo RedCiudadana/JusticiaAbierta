@@ -41,9 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Datos de las instituciones
     var instituciones = [
-        { nombre: "Institución 1", coordenadas: [14.59, -90.51], url: "https://example.com/institucion1" },
-        { nombre: "Institución 2", coordenadas: [14.59, -90.49], url: "https://example.com/institucion2" },
-        { nombre: "Institución 3", coordenadas: [14.58, -90.50], url: "https://example.com/institucion3" }
+        { nombre: "Ministerio Público", coordenadas: [14.6351, -90.5069	], url: "https://www.mp.gob.gt/" },
+        { nombre: "Ministerio Público", coordenadas: [14.6345, -90.5464	], url: "https://www.mp.gob.gt/" },
+        { nombre: "Ministerio Público MAIMI", coordenadas: [14.625, -90.5228], url: "https://www.mp.gob.gt/" },
+        { nombre: "Mp", coordenadas: [14.6101, -90.5307	], url: "https://www.mp.gob.gt/" },
+        { nombre: "MP DELITOS ADMINISTRATIVOS", coordenadas: [14.6342, -90.523], url: "https://www.mp.gob.gt/" },
+        { nombre: "UNIDAD DE GAFETES MP", coordenadas: [14.6128, -90.5298], url: "https://www.mp.gob.gt/" },
+        { nombre: "Fiscalia Metropolitana Mp", coordenadas: [14.626, -90.5222], url: "https://www.mp.gob.gt/" }
     ];
 
     // Función para agregar marcadores de instituciones
