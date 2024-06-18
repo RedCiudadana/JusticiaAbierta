@@ -3011,6 +3011,67 @@ label {
   -ms-transform: scaley(1);
   transform: scaley(1); }
 
+/* 075. btn2 */
+.btn2 {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 10px 20px;
+  margin: 10px 0;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transform: perspective(1px) translateZ(0px);
+  transform: perspective(1px) translateZ(0px);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  vertical-align: middle;
+  background: #13ca92;
+  border-radius: 5px;
+  border: none; }
+  .btn2 i {
+    font-size: 16px;
+    position: relative;
+    left: 6px; }
+
+.btn2:hover {
+  color: #ffffff; }
+
+.btn2::before {
+  background: #016be3;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0 0;
+  -ms-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 5px; }
+
+.btn2:hover::before {
+  -webkit-transform: scaley(1);
+  -ms-transform: scaley(1);
+  transform: scaley(1); }
+
 
 .btn-verde {
   color: #fff;

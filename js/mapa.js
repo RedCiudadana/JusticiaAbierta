@@ -7,14 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    // Icono personalizado para las instituciones
-    var institutionIcon = L.icon({
-        iconUrl: '/ELEMENTOS/institucion.png', // Ruta del icono personalizado
-        iconSize: [32, 32], // Tamaño del icono
-        iconAnchor: [16, 32], // Punto del icono que corresponde a la ubicación del marcador
-        popupAnchor: [0, -32] // Punto desde el cual se abrirá el popup
-    });
-
     // Función para establecer la vista inicial y agregar el marcador de "Estas aquí"
     function setInitialView(lat, lon) {
         map.setView([lat, lon], 14); // Nivel de zoom 14 es aproximadamente 5 km
@@ -41,26 +33,57 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Datos de las instituciones
     var instituciones = [
-        { nombre: "Ministerio Público", coordenadas: [14.6351, -90.5069	], url: "https://www.mp.gob.gt/" },
-        { nombre: "Ministerio Público", coordenadas: [14.6345, -90.5464	], url: "https://www.mp.gob.gt/" },
-        { nombre: "Ministerio Público MAIMI", coordenadas: [14.625, -90.5228], url: "https://www.mp.gob.gt/" },
-        { nombre: "Mp", coordenadas: [14.6101, -90.5307	], url: "https://www.mp.gob.gt/" },
-        { nombre: "MP DELITOS ADMINISTRATIVOS", coordenadas: [14.6342, -90.523], url: "https://www.mp.gob.gt/" },
-        { nombre: "UNIDAD DE GAFETES MP", coordenadas: [14.6128, -90.5298], url: "https://www.mp.gob.gt/" },
-        { nombre: "Fiscalia Metropolitana Mp", coordenadas: [14.626, -90.5222], url: "https://www.mp.gob.gt/" }
+        { nombre: "Ministerio Público", coordenadas: [14.6351, -90.5069], tipo: 'refugios', horarios: 'Lunes - Viernes 9 am a 5pm', contacto: '24781347', url: "https://www.mp.gob.gt/", imagen: "/ELEMENTOS/institucion.png" },
+        { nombre: "Ministerio Público", coordenadas: [14.6345, -90.5464], tipo: 'asesoría legal', horarios: 'Lunes - Viernes 9 am a 5pm', contacto: '24781347', url: "https://www.mp.gob.gt/", imagen: "/ELEMENTOS/institucion.png" },
+        { nombre: "Ministerio Público MAIMI", coordenadas: [14.625, -90.5228], tipo: 'centros de salud', horarios: 'Lunes - Viernes 9 am a 5pm', contacto: '24781347', url: "https://www.mp.gob.gt/", imagen: "/ELEMENTOS/institucion.png" },
+        { nombre: "Mp", coordenadas: [14.6101, -90.5307], tipo: 'refugios', horarios: 'Lunes - Viernes 9 am a 5pm', contacto: '24781347', url: "https://www.mp.gob.gt/", imagen: "/ELEMENTOS/institucion.png" },
+        { nombre: "MP DELITOS ADMINISTRATIVOS", coordenadas: [14.6342, -90.523], tipo: 'asesoría legal', horarios: 'Lunes - Viernes 9 am a 5pm', contacto: '24781347', url: "https://www.mp.gob.gt/", imagen: "/ELEMENTOS/institucion.png" },
+        { nombre: "UNIDAD DE GAFETES MP", coordenadas: [14.6128, -90.5298], tipo: 'centros de salud', horarios: 'Lunes - Viernes 9 am a 5pm', contacto: '24781347', url: "https://www.mp.gob.gt/", imagen: "/ELEMENTOS/institucion.png" },
+        { nombre: "Fiscalia Metropolitana Mp", coordenadas: [14.626, -90.5222], tipo: 'centros de salud', horarios: 'Lunes - Viernes 9 am a 5pm', contacto: '24781347', url: "https://www.mp.gob.gt/", imagen: "/ELEMENTOS/institucion.png" }
     ];
 
-    // Función para agregar marcadores de instituciones
-    instituciones.forEach(function(institucion) {
-        var marker = L.marker(institucion.coordenadas, { icon: institutionIcon }).addTo(map);
+    // Variable para almacenar los marcadores
+    var markers = [];
 
-        // Crear contenido del popup con un botón para redirigir
-        var popupContent = `
-            <div class="popup-content">
-                <b>${institucion.nombre}</b><br>
-                <button class="btn" onclick="window.location.href='${institucion.url}'">Ir a la página</button>
-            </div>`;
-        
-        marker.bindPopup(popupContent);
+    // Función para agregar marcadores de instituciones
+    function addMarkers(filter) {
+        // Eliminar marcadores existentes
+        markers.forEach(marker => map.removeLayer(marker));
+        markers = [];
+
+        // Agregar marcadores según el filtro
+        instituciones.forEach(function(institucion) {
+            if (filter === 'todos' || institucion.tipo === filter) {
+                // Crear icono personalizado
+                var customIcon = L.icon({
+                    iconUrl: institucion.imagen, // Ruta del icono personalizado
+                    iconSize: [32, 32], // Tamaño del icono
+                    iconAnchor: [16, 32], // Punto del icono que corresponde a la ubicación del marcador
+                    popupAnchor: [0, -32] // Punto desde el cual se abrirá el popup
+                });
+
+                var marker = L.marker(institucion.coordenadas, { icon: customIcon }).addTo(map);
+                var popupContent = `
+                    <div class="popup-content">
+                        <img src="${institucion.imagen}" alt="${institucion.nombre}" style="width: 30px; height: 30px; margin-bottom:5px"><br>
+                        <b>${institucion.nombre}</b><br>
+                        <b>Tipo:</b> ${institucion.tipo}<br>
+                        <b>Horarios de Atención:</b> ${institucion.horarios}<br>
+                        <b>Contacto:</b> ${institucion.contacto}<br>
+                        <button class="btn2" onclick="window.location.href='${institucion.url}'">Ir a la página</button>
+                    </div>`;
+                marker.bindPopup(popupContent);
+                markers.push(marker);
+            }
+        });
+    }
+
+    // Agregar los marcadores iniciales (mostrar todos)
+    addMarkers('todos');
+
+    // Manejar el cambio en el filtro
+    document.getElementById('tipo-institucion').addEventListener('change', function() {
+        var filter = this.value;
+        addMarkers(filter);
     });
 });
