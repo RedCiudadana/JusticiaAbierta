@@ -7,6 +7,7 @@ permalink: "/analisis_page/index.html"
 {% block head %}
 <title>Justicia Abierta | Análisis de Sentencias con Perspectiva de Género</title>
 <link rel="stylesheet" href="/css/main.css" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -16,7 +17,7 @@ permalink: "/analisis_page/index.html"
             <div class="col-lg-6 d-flex" style="align-items:center">
                 <div class="my-6" style="text-align:left">
                     <h3 class="text-white notranslate" style="font-size:40px; margin-bottom:5px">Análisis de Sentencias con Perspectiva de Género</h3>
-                    <h3 class="text-white" style="font-size:24px;font-weight:400;line-height:32px">Plataforma digital utiliza tecnologías avanzadas de Procesamiento de Lenguaje Natural (PLN) para analizar sentencias judiciales emitidas en Guatemala.</h3>
+                    <h3 class="text-white" style="font-size:28px;font-weight:400;line-height:32px">Plataforma digital utiliza tecnologías avanzadas de Procesamiento de Lenguaje Natural (PLN) para analizar sentencias judiciales emitidas en Guatemala.</h3>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -28,31 +29,36 @@ permalink: "/analisis_page/index.html"
     </div>
 </div>
 
-<!-- Seccion -->
+<!-- Sección -->
 <div class="section m-0" style="background-color:#f1f5fd">
     <div class="container py-6">
         <div class="row">
             <div class="col-lg-12 my-4">
                 <h2 class="text-left">Sube tu archivo para análisis</h2>
             </div>
-            <div class="col-lg-6 my-4">
+            <div class="col-lg-6">
                 <img src="/ELEMENTOS/ELEMENTOS MEJORAS_JA/ICONOS/EVENTOS-17.png">
             </div>
             <div class="col-lg-6 my-4 d-flex align-items-center">
                 <div>
-                    <h3 class="text-left" style="color:#666!important">Sube tu archivo de sentencia</h3>
+                    <h3 class="text-left" style="color:#666!important">Sube tu Información acá</h3>
                     <form id="uploadForm">
                         <div class="mb-3">
-                            <label for="formFile">Selecciona tu archivo</label>
-                            <input class="form-control" type="file" id="formFile" aria-label="Selecciona tu archivo">
+                            <label for="formFile" class="form-label">Selecciona tu archivo</label>
+                            <input class="form-control" type="file" id="formFile">
                         </div>
-                        <button type="button" class="btn btn-primary" onclick="uploadFile()">Analiza tu Archivo <i class="fa-solid fa-upload"></i></button>
+                        <button type="button" class="btn btn-primary" onclick="analyzePDF()">Analiza tu Archivo <i class="fa-solid fa-upload"></i></button>
                     </form>
                 </div>
             </div>
-
-            <div class="col-lg-12">
-                <div id="result" class="mt-4"></div>
+            <div class="col-lg-12 text-center my-4">
+                <div id="result1" class="mt-4"></div>
+            </div>
+            <div class="col-lg-6 my-4">
+                <div id="result2" class="mt-4"></div>
+            </div>
+            <div class="col-lg-6 my-4">
+                <div id="result3" class="mt-4"></div>
             </div>
         </div>
     </div>
@@ -61,23 +67,100 @@ permalink: "/analisis_page/index.html"
 
 {% block body_javascripts %}
 <script>
-    async function uploadFile() {
+    async function analyzePDF() {
         const fileInput = document.getElementById('formFile');
         const file = fileInput.files[0];
-        const formData = new FormData();
-        formData.append('file', file);
-
-        try {
-            const response = await fetch('/api/analyze', {
-                method: 'POST',
-                body: formData,
-            });
-            const result = await response.json();
-            document.getElementById('result').innerHTML = '<h4>Análisis completado</h4><pre>' + JSON.stringify(result, null, 2) + '</pre>';
-        } catch (error) {
-            console.error('Error al subir el archivo:', error);
-            document.getElementById('result').innerHTML = '<h4>Error al analizar el archivo</h4>';
+        if (!file) {
+            alert('Por favor selecciona un archivo');
+            return;
         }
+
+        const reader = new FileReader();
+        reader.onload = function() {
+            const typedarray = new Uint8Array(this.result);
+
+            pdfjsLib.getDocument({data: typedarray}).promise.then(async function(pdf) {
+                let textContent = '';
+                for (let i = 1; i <= pdf.numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const text = await page.getTextContent();
+                    text.items.forEach(item => {
+                        textContent += item.str + ' ';
+                    });
+                }
+
+                // Extraer información usando expresiones regulares
+                const expedienteRegex = /\b\d{5}-\d{4}-\d{5}\b/;
+                const delitoRegex = /delito:\s*([^\n.]*)/i;
+                const corteRegex = /Corte\s+([^.,]*)/i;
+                const fechaRegex = /Guatemala,\s+((?:uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dieciséis|diecisiete|dieciocho|diecinueve|veinte|veintiuno|veintidós|veintitrés|veinticuatro|veinticinco|veintiséis|veintisiete|veintiocho|veintinueve|treinta|treinta y uno)\s+de\s+(?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+de\s+(?:mil\s+novecientos\s+|dos\s+mil\s+)?(?:ochenta|noventa|cero|diez|veinte)?(?:[a-z]+))\./i;
+                const leyesRegex = /LEYES APLICABLES([\s\S]*?)POR TANTO/i;
+                const porTantoRegex = /POR TANTO\s*([\s\S]*?)(?=\.\s[A-Z\s]+:|$)/i;
+
+                const expediente = textContent.match(expedienteRegex);
+                const delito = textContent.match(delitoRegex);
+                const corte = textContent.match(corteRegex);
+                const fecha = textContent.match(fechaRegex);
+                const leyes = textContent.match(leyesRegex);
+                let porTanto = null;
+                if (leyes) {
+                    const porTantoSection = textContent.substring(textContent.indexOf(leyes[0]));
+                    porTanto = porTantoSection.match(porTantoRegex);
+                }
+
+                let resultHTML1 = '<h4>Análisis completado</h4>';
+                let resultHTML2 = '';
+                let resultHTML3 = '';
+
+                if (expediente) {
+                    resultHTML2 += `<p><strong>Número de expediente:</strong> ${expediente[0]}</p>`;
+                } else {
+                    resultHTML2 += `<p><strong>Número de expediente:</strong> No encontrado</p>`;
+                }
+
+                if (delito) {
+                    resultHTML2 += `<p><strong>Delito:</strong> ${delito[1].trim()}</p>`;
+                } else {
+                    resultHTML2 += `<p><strong>Delito:</strong> No encontrado</p>`;
+                }
+
+                if (corte) {
+                    resultHTML2 += `<p><strong>Corte:</strong> Corte ${corte[1].trim()}</p>`;
+                } else {
+                    resultHTML2 += `<p><strong>Corte:</strong> No encontrada</p>`;
+                }
+
+                if (fecha) {
+                    resultHTML2 += `<p><strong>Fecha:</strong> Guatemala, ${fecha[1].trim()}.</p>`;
+                } else {
+                    resultHTML2 += `<p><strong>Fecha:</strong> No encontrada</p>`;
+                }
+
+                if (leyes) {
+                    resultHTML3 += `<p><strong>Leyes Aplicables:</strong> ${leyes[1].trim()}</p>`;
+                } else {
+                    resultHTML3 += `<p><strong>Leyes Aplicables:</strong> No encontrado</p>`;
+                }
+
+                if (porTanto) {
+                    resultHTML3 += `<p><strong>Por Tanto:</strong> ${porTanto[1].trim()}</p>`;
+                } else {
+                    resultHTML3 += `<p><strong>Por Tanto:</strong> No encontrado</p>`;
+                }
+
+                document.getElementById('result1').innerHTML = resultHTML1;
+                document.getElementById('result2').innerHTML = resultHTML2;
+                document.getElementById('result3').innerHTML = resultHTML3;
+            }).catch(function(error) {
+                console.error('Error al analizar el archivo:', error);
+                document.getElementById('result1').innerHTML = '<h4>Error al analizar el archivo</h4>';
+                document.getElementById('result2').innerHTML = '';
+                document.getElementById('result3').innerHTML = '';
+            });
+        };
+
+        reader.readAsArrayBuffer(file);
     }
 </script>
 {% endblock %}
+
