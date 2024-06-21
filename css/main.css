@@ -6802,3 +6802,9 @@ padding: 10px;
 .listv2 li{
   list-style: circle;
 }
+
+.img-cc{
+  width: 150px;
+  height: 150px;
+  margin: 0px 0px 20px 0px;
+}

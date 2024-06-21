@@ -90,17 +90,23 @@ permalink: "/analisis_page/index.html"
                 }
 
                 // Extraer información usando expresiones regulares
-                const expedienteRegex = /\b\d{5}-\d{4}-\d{5}\b/;
-                const delitoRegex = /delito:\s*([^\n.]*)/i;
+                const expedienteRegex = /\d{4}-\d{4}/;
+                const actoReclamadoRegex = /B\)\s+Acto\s+reclamado:\s*([^.]*)/i;
                 const corteRegex = /Corte\s+([^.,]*)/i;
                 const fechaRegex = /Guatemala,\s+((?:uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dieciséis|diecisiete|dieciocho|diecinueve|veinte|veintiuno|veintidós|veintitrés|veinticuatro|veinticinco|veintiséis|veintisiete|veintiocho|veintinueve|treinta|treinta y uno)\s+de\s+(?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+de\s+(?:mil\s+novecientos\s+|dos\s+mil\s+)?(?:ochenta|noventa|cero|diez|veinte)?(?:[a-z]+))\./i;
+                const considerando1Regex = /-I-*([\s\S]*?)\s*-II-/i;
+                const considerando2Regex = /-II-*([\s\S]*?)\s*-III-/i;
+                const considerando3Regex = /-III-*([\s\S]*?)\s*-IV-/i;
                 const leyesRegex = /LEYES APLICABLES([\s\S]*?)POR TANTO/i;
-                const porTantoRegex = /POR TANTO\s*([\s\S]*?)(?=\.\s[A-Z\s]+:|$)/i;
+                const porTantoRegex = /POR TANTO\s*([\s\S]*?)(?=\.\s\s\s|$)/i;
 
                 const expediente = textContent.match(expedienteRegex);
-                const delito = textContent.match(delitoRegex);
+                const actoReclamado = textContent.match(actoReclamadoRegex);
                 const corte = textContent.match(corteRegex);
                 const fecha = textContent.match(fechaRegex);
+                const considerando1 = textContent.match(considerando1Regex);
+                const considerando2 = textContent.match(considerando2Regex);
+                const considerando3 = textContent.match(considerando3Regex);
                 const leyes = textContent.match(leyesRegex);
                 let porTanto = null;
                 if (leyes) {
@@ -109,7 +115,7 @@ permalink: "/analisis_page/index.html"
                 }
 
                 let resultHTML1 = '<h4>Análisis completado</h4>';
-                let resultHTML2 = '';
+                let resultHTML2 = '<img src="/ELEMENTOS/cc.jpg" class="img-cc"><br>';
                 let resultHTML3 = '';
 
                 if (expediente) {
@@ -118,14 +124,14 @@ permalink: "/analisis_page/index.html"
                     resultHTML2 += `<p><strong>Número de expediente:</strong> No encontrado</p>`;
                 }
 
-                if (delito) {
-                    resultHTML2 += `<p><strong>Delito:</strong> ${delito[1].trim()}</p>`;
+                if (actoReclamado) {
+                    resultHTML2 += `<p><strong>Acto Reclamado:</strong> ${actoReclamado[1].trim()}</p>`;
                 } else {
-                    resultHTML2 += `<p><strong>Delito:</strong> No encontrado</p>`;
+                    resultHTML2 += `<p><strong>Acto Reclamado:</strong> No encontrado</p>`;
                 }
 
                 if (corte) {
-                    resultHTML2 += `<p><strong>Corte:</strong> Corte ${corte[1].trim()}</p>`;
+                    resultHTML2 += `<p><strong>Corte:</strong> CORTE ${corte[1].trim()}</p>`;
                 } else {
                     resultHTML2 += `<p><strong>Corte:</strong> No encontrada</p>`;
                 }
@@ -134,6 +140,24 @@ permalink: "/analisis_page/index.html"
                     resultHTML2 += `<p><strong>Fecha:</strong> Guatemala, ${fecha[1].trim()}.</p>`;
                 } else {
                     resultHTML2 += `<p><strong>Fecha:</strong> No encontrada</p>`;
+                }
+
+                if (considerando1) {
+                    resultHTML2 += `<p><strong>Considerando I:</strong> Guatemala, ${considerando1[1].trim()}.</p>`;
+                } else {
+                    resultHTML2 += `<p><strong>Considerando I:</strong> No encontrado</p>`;
+                }
+                
+                if (considerando2) {
+                    resultHTML2 += `<p><strong>Considerando II:</strong> Guatemala, ${considerando2[1].trim()}.</p>`;
+                } else {
+                    resultHTML2 += `<p><strong>Considerando II:</strong> No encontrado</p>`;
+                }
+                
+                if (considerando3) {
+                    resultHTML2 += `<p><strong>Considerando III:</strong> Guatemala, ${considerando3[1].trim()}.</p>`;
+                } else {
+                    resultHTML2 += `<p><strong>Considerando III:</strong> No encontrado</p>`;
                 }
 
                 if (leyes) {
