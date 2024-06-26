@@ -54,6 +54,9 @@ permalink: "/analisis_page/index.html"
             <div class="col-lg-12 text-center my-4">
                 <div id="result1" class="mt-4"></div>
             </div>
+            <div class="col-lg-12 my-4 ">
+                <div id="result4" class="mt-4 d-flex"></div>
+            </div>
             <div class="col-lg-6 my-4">
                 <div id="result2" class="mt-4"></div>
             </div>
@@ -74,6 +77,8 @@ permalink: "/analisis_page/index.html"
             alert('Por favor selecciona un archivo');
             return;
         }
+
+        const fileName = file.name;
 
         const reader = new FileReader();
         reader.onload = function() {
@@ -115,71 +120,74 @@ permalink: "/analisis_page/index.html"
                 }
 
                 let resultHTML1 = '<h4>Análisis completado</h4>';
-                let resultHTML2 = '<img src="/ELEMENTOS/cc.jpg" class="img-cc"><br>';
+                let resultHTML4 = '<img src="/ELEMENTOS/cc.jpg" class="img-cc"><br>';
+                let resultHTML2 = '';
                 let resultHTML3 = '';
 
                 if (expediente) {
-                    resultHTML2 += `<p><strong>Número de expediente:</strong> ${expediente[0]}</p>`;
+                    resultHTML2 += `<p><strong>Variable 2. Número de expediente:</strong> <br><br> ${expediente[0]}</p>`;
                 } else {
-                    resultHTML2 += `<p><strong>Número de expediente:</strong> No encontrado</p>`;
+                    resultHTML2 += `<p><strong>Variable 2. Número de expediente:</strong> No encontrado</p>`;
                 }
 
                 if (actoReclamado) {
-                    resultHTML2 += `<p><strong>Acto Reclamado:</strong> ${actoReclamado[1].trim()}</p>`;
+                    resultHTML2 += `<p><strong>Variable 2. Acto Reclamado:</strong> <br><br> ${actoReclamado[1].trim()}</p>`;
                 } else {
-                    resultHTML2 += `<p><strong>Acto Reclamado:</strong> No encontrado</p>`;
+                    resultHTML2 += `<p><strong>Variable 2. Acto Reclamado:</strong> No encontrado</p>`;
                 }
 
                 if (corte) {
-                    resultHTML2 += `<p><strong>Corte:</strong> CORTE ${corte[1].trim()}</p>`;
+                    resultHTML4 += `<div><p><strong>Nombre del archivo:</strong><br><br> ${fileName}</p><p><strong>Variable 1. Corte:</strong> <br><br> CORTE ${corte[1].trim()}</p></div>`;
                 } else {
-                    resultHTML2 += `<p><strong>Corte:</strong> No encontrada</p>`;
+                    resultHTML4 += `<div><p><strong>Nombre del archivo:</strong><br><br> ${fileName}</p><p><strong>Variable 1. Corte:</strong> No encontrada</p></div>`;
                 }
 
                 if (fecha) {
-                    resultHTML2 += `<p><strong>Fecha:</strong> Guatemala, ${fecha[1].trim()}.</p>`;
+                    resultHTML2 += `<p><strong>Variable 4. Fecha:</strong> <br><br> Guatemala, ${fecha[1].trim()}.</p>`;
                 } else {
-                    resultHTML2 += `<p><strong>Fecha:</strong> No encontrada</p>`;
+                    resultHTML2 += `<p><strong>Variable 4. Fecha:</strong> No encontrada</p>`;
                 }
 
                 if (considerando1) {
-                    resultHTML2 += `<p><strong>Considerando I:</strong> Guatemala, ${considerando1[1].trim()}.</p>`;
+                    resultHTML2 += `<p><strong>Variable 5. Considerando I:</strong> <br><br> ${considerando1[1].trim()}.</p>`;
                 } else {
-                    resultHTML2 += `<p><strong>Considerando I:</strong> No encontrado</p>`;
+                    resultHTML2 += `<p><strong>Variable 5. Considerando I:</strong> No encontrado</p>`;
                 }
                 
                 if (considerando2) {
-                    resultHTML2 += `<p><strong>Considerando II:</strong> Guatemala, ${considerando2[1].trim()}.</p>`;
+                    resultHTML2 += `<p><strong>Variable 6. Considerando II:</strong> <br><br> ${considerando2[1].trim()}.</p>`;
                 } else {
-                    resultHTML2 += `<p><strong>Considerando II:</strong> No encontrado</p>`;
+                    resultHTML2 += `<p><strong>Variable 6. Considerando II:</strong> No encontrado</p>`;
                 }
                 
                 if (considerando3) {
-                    resultHTML2 += `<p><strong>Considerando III:</strong> Guatemala, ${considerando3[1].trim()}.</p>`;
+                    resultHTML2 += `<p><strong>Variable 7. Considerando III:</strong> <br><br> ${considerando3[1].trim()}.</p>`;
                 } else {
-                    resultHTML2 += `<p><strong>Considerando III:</strong> No encontrado</p>`;
+                    resultHTML2 += `<p><strong>Variable 7. Considerando III:</strong> No encontrado</p>`;
                 }
 
                 if (leyes) {
-                    resultHTML3 += `<p><strong>Leyes Aplicables:</strong> ${leyes[1].trim()}</p>`;
+                    resultHTML3 += `<p><strong>Variable 8. Leyes Aplicables:</strong> <br><br> ${leyes[1].trim()}</p>`;
                 } else {
-                    resultHTML3 += `<p><strong>Leyes Aplicables:</strong> No encontrado</p>`;
+                    resultHTML3 += `<p><strong>Variable 8. Leyes Aplicables:</strong> No encontrado</p>`;
                 }
 
                 if (porTanto) {
-                    resultHTML3 += `<p><strong>Por Tanto:</strong> ${porTanto[1].trim()}</p>`;
+                    resultHTML3 += `<p><strong>Variable 9. Por Tanto:</strong> <br><br> ${porTanto[1].trim()}</p>`;
                 } else {
-                    resultHTML3 += `<p><strong>Por Tanto:</strong> No encontrado</p>`;
+                    resultHTML3 += `<p><strong>Variable 9. Por Tanto:</strong> No encontrado</p>`;
                 }
 
                 document.getElementById('result1').innerHTML = resultHTML1;
                 document.getElementById('result2').innerHTML = resultHTML2;
                 document.getElementById('result3').innerHTML = resultHTML3;
+                document.getElementById('result4').innerHTML = resultHTML4;
             }).catch(function(error) {
                 console.error('Error al analizar el archivo:', error);
                 document.getElementById('result1').innerHTML = '<h4>Error al analizar el archivo</h4>';
                 document.getElementById('result2').innerHTML = '';
                 document.getElementById('result3').innerHTML = '';
+                document.getElementById('result4').innerHTML = '';
             });
         };
 
