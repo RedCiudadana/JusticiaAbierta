@@ -116,7 +116,7 @@ permalink: "/analisis_page/index.html"
                 const fechaRegex = /Guatemala,\s+((?:uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dieciséis|diecisiete|dieciocho|diecinueve|veinte|veintiuno|veintidós|veintitrés|veinticuatro|veinticinco|veintiséis|veintisiete|veintiocho|veintinueve|treinta|treinta y uno)\s+de\s+(?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+de\s+(?:mil\s+novecientos\s+|dos\s+mil\s+)?(?:ochenta|noventa|cero|diez|veinte)?(?:[a-z]+))\./i;
                 const considerando1Regex = /-I-*([\s\S]*?)\s*-II-/i;
                 const considerando2Regex = /-II-*([\s\S]*?)\s*-III-/i;
-                const considerando3Regex = /-III-*([\s\S]*?)\s*-IV-/i;
+                const considerando3Regex = /-III-*([\s\S]*?)\s*/i;
                 const leyesRegex = /LEYES APLICABLES([\s\S]*?)POR TANTO/i;
                 const porTantoRegex = /POR TANTO\s*([\s\S]*?)(?=\.\s\s\s|$)/i;
 
@@ -145,7 +145,7 @@ permalink: "/analisis_page/index.html"
                 let resultHTML9 = '<img src="/ELEMENTOS/cc.jpg" class="img-cc"><br>';
 
                 if (corte) {
-                    resultHTML3 += `<div><p><strong>Nombre del archivo:</strong> ${fileName}</p><p><strong>Variable 1. Corte:</strong>  CORTE ${corte[1].trim()}</p></div>`;
+                    resultHTML3 += `<div><p><strong>Nombre del archivo:</strong> ${fileName}</p><p><strong>Variable 1. Corte:</strong>  Corte ${corte[1].trim()}</p></div>`;
                 } else {
                     resultHTML3 += `<div><p><strong>Nombre del archivo:</strong> ${fileName}</p><p><strong>Variable 1. Corte:</strong> No encontrada</p></div>`;
                 }
@@ -157,9 +157,9 @@ permalink: "/analisis_page/index.html"
                 }
 
                 if (actoReclamado) {
-                    resultHTML3 += `<p><strong>Variable 2. Acto Reclamado:</strong>  ${actoReclamado[1].trim()}</p>`;
+                    resultHTML3 += `<p><strong>Variable 3. Acto Reclamado:</strong>  ${actoReclamado[1].trim()}</p>`;
                 } else {
-                    resultHTML3 += `<p><strong>Variable 2. Acto Reclamado:</strong> No encontrado</p>`;
+                    resultHTML3 += `<p><strong>Variable 3. Acto Reclamado:</strong> No encontrado</p>`;
                 }
 
                 if (considerando1) {
