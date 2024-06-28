@@ -8273,17 +8273,12 @@ button.bg-dark:focus {
 
 .mt-6,
 .my-6 {
-  margin-top: 3rem !important;
-}
-
-.mr-6,
-.mx-6 {
-  margin-right: 3rem !important;
+  margin-top: 4rem !important;
 }
 
 .mb-6,
 .my-6 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 4rem !important;
 }
 
 .p-0 {
