@@ -205,7 +205,7 @@ p {
   font-size: 15px;
   font-weight: normal;
   line-height: 22px;
-  color: #666666!important;
+  color: #333333!important;
   margin-bottom: 15px; }
 
 hr {
@@ -215,7 +215,7 @@ hr {
   padding: 0; }
 
 label {
-  color: #666666;
+  color: #333333;
   cursor: pointer;
   font-size: 14px;
   font-weight: 400; 
@@ -1985,7 +1985,7 @@ label {
   display: block; }
 
 .main-menu nav > ul > li .sub-menu li a {
-  color: #666666;
+  color: #333333;
   font-size: 14px;
   margin: 0;
   padding: 13px 20px;

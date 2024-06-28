@@ -22,7 +22,7 @@ permalink: "/analisis_page/index.html"
             </div>
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <div class="my-6" style="text-align:center">
-                    <img style="padding:15px" src="/ELEMENTOS/ELEMENTOS MEJORAS_JA/SLIDER/JA-17.png">
+                    <img style="padding:15px" src="/ELEMENTOS/SLIDER/JA-19.png">
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@ permalink: "/analisis_page/index.html"
             </div>
             <div class="col-lg-6 my-4 d-flex align-items-center">
                 <div>
-                    <h3 class="text-left" style="color:#666!important">Sube tu Información acá</h3>
+                    <h3 class="text-left" style="color:#333!important">Sube tu Información acá</h3>
                     <form id="uploadForm">
                         <div class="mb-3">
                             <label for="formFile" class="form-label">Selecciona tu archivo</label>
@@ -279,9 +279,9 @@ permalink: "/analisis_page/index.html"
                 let resultHTML23 = '';
 
                 if (corte) {
-                    resultHTML2 += `<strong>1. Análisis de los Hechos</strong>`;
+                    resultHTML2 += `<p><strong style="font-size:25px">1. Análisis de los Hechos</strong></p>`;
                     resultHTML2 += `<p>El documento corresponde a la siguiente institución:  CORTE ${corte[1].trim()}</p>`;
-                    resultHTML2 += '<img src="/ELEMENTOS/cc.jpg" class="img-cc">';
+                    resultHTML2 += '<img src="/ELEMENTOS/ANALISIS/JA-20.png" class="img-cc">';
                     resultHTML3 += `El principal objetivo es determinar si una decisión jurisdiccional ha incorporado la perspectiva de género y en qué medida. Se busca asegurar la protección de los derechos de mujeres, niñas y adolescentes y promover la igualdad en el acceso a la justicia.`
                 } else {
                     resultHTML2 += `1. Institución:</strong> No encontrada</p>`;
@@ -289,78 +289,79 @@ permalink: "/analisis_page/index.html"
 
                 if (expediente) {
                     resultHTML4 += `<p><strong>El documento analizado cuenta con el siguiente número de expediente es:</strong> <br><br>  ${expediente[0]}</p>`;
-                    resultHTML5 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML5 += `<img src="/ELEMENTOS/ANALISIS/JA-21.png" class="img-cc">`;
                 } else {
                     resultHTML4 += `<p><strong>El documento analizado cuenta con el siguiente número de expediente es:</strong> No encontrado</p>`;
-                    resultHTML5 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML5 += `<img src="/ELEMENTOS/ANALISIS/JA-21.png" class="img-cc">`;
                 }
 
                 if (fecha) {
                     resultHTML7 += `<p><strong>Fecha:</strong> <br><br> El documento analizo que la fecha de resolucion es: <br><br> Guatemala, ${fecha[1].trim()}.</p>`;
-                    resultHTML6 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML6 += `<img src="/ELEMENTOS/ANALISIS/JA-22.png" class="img-cc">`;
                 } else {
                     resultHTML7 += `<p><strong>Fecha:</strong> No encontrada</p>`;
-                    resultHTML6 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML6 += `<img src="/ELEMENTOS/ANALISIS/JA-22.png" class="img-cc">`;
                 }
 
                 if (actoReclamado) {
-                    resultHTML8 += `<p><strong>2. Valoración de Situación de Riesgo:</strong> <br><br> El documento analizo que el acto reclamado es: <br><br> ${actoReclamado[1].trim()}</p>`;
-                    resultHTML9 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML8 += `<p><strong  style="font-size:25px">2. Valoración de Situación de Riesgo:</strong> <br><br> El documento analizo que el acto reclamado es: <br><br> ${actoReclamado[1].trim()}</p>`;
+                    resultHTML9 += `<img src="/ELEMENTOS/ANALISIS/JA-23.png" class="img-cc">`;
                 } else {
-                    resultHTML8 += `<p><strong>2. Valoración de Situación de Riesgo:</strong> No encontrado</p>`;
-                    resultHTML9 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML8 += `<p><strong  style="font-size:25px">2. Valoración de Situación de Riesgo:</strong> No encontrado</p>`;
+                    resultHTML9 += `<img src="/ELEMENTOS/ANALISIS/JA-23.png" class="img-cc">`;
                 }
 
                 if (considerando1) {
                     resultHTML11 += `<p><strong>Considerando I:</strong> <br><br>  ${considerando1[1].trim()}.</p>`;
-                    resultHTML10 += `<div><p>3. Recopilación y Valoración de las Pruebas:</p><img src="/ELEMENTOS/cc.jpg" class="img-cc"></div>`;
+                    resultHTML10 += `<div><p><strong style="font-size:25px">3. Recopilación y Valoración de las Pruebas:</strong></p><img src="/ELEMENTOS/ANALISIS/JA-24.png" class="img-cc"></div>`;
                 } else {
                     resultHTML11 += `<p><strong>Considerando I:</strong> No encontrado</p>`;
-                    resultHTML10 += `<div><p><strong>3. Recopilación y Valoración de las Pruebas:</strong></p><img src="/ELEMENTOS/cc.jpg" class="img-cc"></div>`;
+                    resultHTML10 += `<div><p><strong  style="font-size:25px">3. Recopilación y Valoración de las Pruebas:</strong></p><img src="/ELEMENTOS/ANALISIS/JA-24.png" class="img-cc"></div>`;
                 }
                 
                 if (considerando2) {
                     resultHTML12 += `<p><strong>Considerando II:</strong> <br><br> ${considerando2[1].trim()}.</p>`;
-                    resultHTML13 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML13 += `<img src="/ELEMENTOS/ANALISIS/JA-25.png" class="img-cc">`;
                 } else {
                     resultHTML12 += `<p><strong>Considerando II:</strong> No encontrado</p>`;
-                    resultHTML13 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML13 += `<img src="/ELEMENTOS/ANALISIS/JA-25.png" class="img-cc">`;
                 }
                 
                 if (considerando3) {
                     resultHTML15 += `<p><strong>Considerando III:</strong> <br><br> ${considerando3[1].trim()}.</p>`;
-                    resultHTML14 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML14 += `<img src="/ELEMENTOS/ANALISIS/JA-25.png" class="img-cc">`;
                 } else {
                     resultHTML15 += `<p><strong>Considerando III:</strong> No encontrado</p>`;
-                    resultHTML14 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML14 += `<img src="/ELEMENTOS/ANALISIS/JA-25.png" class="img-cc">`;
                 }
 
                 if (leyes) {
-                    resultHTML16 += `<p><strong>4. Determinación del Derecho Aplicable:</strong> <br><br> Leyes Aplicables: <br><br> ${leyes[1].trim()}</p>`;
-                    resultHTML17 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML16 += `<p><strong  style="font-size:25px">4. Determinación del Derecho Aplicable:</strong> <br><br> Leyes Aplicables: <br><br> ${leyes[1].trim()}</p>`;
+                    resultHTML17 += `<img src="/ELEMENTOS/ANALISIS/JA-26.png" class="img-cc">`;
                 } else {
-                    resultHTML16 += `<p><strong>4. Determinación del Derecho Aplicable:</strong> No encontrado</p>`;
-                    resultHTML17 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML16 += `<p><strong  style="font-size:25px">4. Determinación del Derecho Aplicable:</strong> No encontrado</p>`;
+                    resultHTML17 += `<img src="/ELEMENTOS/ANALISIS/JA-26.png" class="img-cc">`;
                 }
 
                 if (porTanto) {
                     resultHTML19 += `<p><strong>Resolución:</strong> <br><br> ${porTanto[1].trim()}</p>`;
-                    resultHTML18 += `<div><p><strong>5. Argumentación Resolutoria:</strong></p><img src="/ELEMENTOS/cc.jpg" class="img-cc"></div>`;
+                    resultHTML18 += `<div><p><strong style="font-size:25px">5. Argumentación Resolutoria:</strong></p><img src="/ELEMENTOS/ANALISIS/JA-21.png" class="img-cc"></div>`;
                 } else {
                     resultHTML19 += `<p><strong>Resolución:</strong> No encontrado</p>`;
-                    resultHTML18 += `<div><p><strong>5. Argumentación Resolutoria:</strong></p><img src="/ELEMENTOS/cc.jpg" class="img-cc"></div>`;
+                    resultHTML18 += `<div><p><strong style="font-size:25px">5. Argumentación Resolutoria:</strong></p><img src="/ELEMENTOS/ANALISIS/JA-21.png" class="img-cc"></div>`;
                 }
 
                 if (corte) {
-                    resultHTML20 += `<p><strong>6. Conclusión del Análisis</strong></p>`;
+                    resultHTML20 += `<p><strong style="font-size:25px">6. Conclusión del Análisis</strong></p>`;
+                    resultHTML20 += `<img src="/ELEMENTOS/ANALISIS/JA-24.png" class="img-cc">`;
                     resultHTML20 += `<p>La sentencia no incorpora adecuadamente la perspectiva de género en varios aspectos clave:		</p>`;
                     resultHTML21 += '<p><strong> • Análisis de Hechos y Contexto:</strong> No se evalúa el contexto de género y las posibles discriminaciones implícitas.</p>';
                     resultHTML21 += '<p><strong> • Valoración de Pruebas:</strong> No se consideran pruebas que reflejen el impacto de género.</p>';
                     resultHTML21 += '<p><strong> • Derecho Aplicable:</strong> No se cuestiona la neutralidad de la normativa aplicada desde una perspectiva de género.</p>';
                     resultHTML21 += '<p><strong> • Medidas de Reparación:</strong> No se proponen medidas que promuevan la igualdad de género.</p>';
 
-                    resultHTML22 += `<p><strong>7.  Recomendaciones:</strong></p>`;
-                    resultHTML22 += `<img src="/ELEMENTOS/cc.jpg" class="img-cc">`;
+                    resultHTML22 += `<p><strong style="font-size:25px">7.  Recomendaciones:</strong></p>`;
+                    resultHTML22 += `<img src="/ELEMENTOS/ANALISIS/JA-27.png" class="img-cc">`;
                     resultHTML23 += '<p>Para mejorar la inclusión de la perspectiva de género, es fundamental:</p>';
                     resultHTML23 += '<p><strong> • Evaluar el impacto de género</strong> en las decisiones administrativas.</p>';
                     resultHTML23 += '<p><strong> • Incorporar pruebas contextuales</strong> que reflejen posibles discriminaciones de género.</p>';
