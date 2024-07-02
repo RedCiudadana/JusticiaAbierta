@@ -95,7 +95,7 @@ collections:
         }
   - name: "videos-lc" # Used in routes, e.g., /admin/collections/video
     label: "Lenguaje Claro - Videos" # Used in the UI
-    folder: "src/videos" # The path to the folder where the documents are stored
+    folder: "src/videos-lc" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
@@ -107,7 +107,7 @@ collections:
       - { name: "date", label: "Date", widget: "datetime" }
   - name: "glosario-juridico" # Used in routes, e.g., /admin/collections/video
     label: "Lenguaje Claro - Glosario Jurídico" # Used in the UI
-    folder: "src/videos" # The path to the folder where the documents are stored
+    folder: "src/glosario-juridico" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
@@ -118,7 +118,7 @@ collections:
       - { name: "referencia", label: "Referencia" }
   - name: "normas-explicadas" # Used in routes, e.g., /admin/collections/video
     label: "Lenguaje Claro - Normas Explicadas" # Used in the UI
-    folder: "src/videos" # The path to the folder where the documents are stored
+    folder: "src/normas-explicadas" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
