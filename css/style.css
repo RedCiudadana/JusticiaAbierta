@@ -17112,3 +17112,17 @@ label.checkbox { padding-left: 20px; }
 .content-curso li{
 	list-style: disc;
 }
+
+.overflow-text {
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* Limita a 3 líneas */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.cuadro_blanco{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 5%;
+}
