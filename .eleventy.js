@@ -23,6 +23,10 @@ module.exports = function (eleventyConfig) {
         return array.slice(0, limit);
     });
 
+    eleventyConfig.addNunjucksFilter("limitPart", function (array, limit1, limit2) {
+        return array.slice(limit1, limit2);
+    });
+
     eleventyConfig.addFilter('log', value => {
         console.log(value)
     });

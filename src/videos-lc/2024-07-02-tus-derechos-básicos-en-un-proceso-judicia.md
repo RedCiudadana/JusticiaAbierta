@@ -1,9 +1,9 @@
 ---
-title: Tus Derechos Básicos en un Proceso Judicia
+title: Tus Derechos Básicos en un Proceso Judicial
 descripcion: |-
   <!--StartFragment-->
 
-  Tus Derechos Básicos en un Proceso Judicia
+  Tus Derechos Básicos en un Proceso Judicial
 
   <!--EndFragment-->
 link: <iframe width="560" height="315"
