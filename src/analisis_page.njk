@@ -230,13 +230,13 @@ permalink: "/analisis_page/index.html"
                 }
 
                 // Extraer información usando expresiones regulares
-                const expedienteRegex = /Expediente:\s*(\d{3,4}-\d{4})/i;
+                const expedienteRegex = /Expediente([\s\S]*?)\s\s\s/i;
                 const actoReclamadoRegex = /B\)\s+Acto\s+reclamado:\s*([^.]*)/i;
                 const corteRegex = /Corte\s+([^.,]*)/i;
                 const fechaRegex = /Guatemala,\s+((?:uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dieciséis|diecisiete|dieciocho|diecinueve|veinte|veintiuno|veintidós|veintitrés|veinticuatro|veinticinco|veintiséis|veintisiete|veintiocho|veintinueve|treinta|treinta y uno)\s+de\s+(?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+de\s+(?:mil\s+novecientos\s+|dos\s+mil\s+)?(?:ochenta|noventa|cero|diez|veinte)?(?:[a-z]+))\./i;
-                const considerando1Regex = /-I-*([\s\S]*?)\s*-II-/i;
-                const considerando2Regex = /-II-*([\s\S]*?)\s*-III-/i;
-                const considerando3Regex = /-III-*([\s\S]*?)\s*/i;
+                const considerando1Regex = /- I -*([\s\S]*?)\s*- II -/i;
+                const considerando2Regex = /- II -*([\s\S]*?)\s*- III -/i;
+                const considerando3Regex = /- III -*([\s\S]*?)\sLEYES APLICABLES*/i;
                 const leyesRegex = /LEYES APLICABLES([\s\S]*?)POR TANTO/i;
                 const porTantoRegex = /POR TANTO\s*([\s\S]*?)(?=\.\s\s\s|$)/i;
 
