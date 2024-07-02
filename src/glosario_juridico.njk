@@ -37,14 +37,14 @@ permalink: glosario-juridico/index.html
                         <h2 class="text-left">Glosario Jurídico</h2>
                         <br>
                         {% for glos in collections.glosario_juridico%}
-                        <div class="col-lg-12 d-flex">
+                        <div class="col-lg-12 d-flex my-4">
                             <div class="row">
-                                <div class="col-lg-4 p-0">
+                                <div class="col-lg-3 p-0">
                                     <img src="/ELEMENTOS/08_GRAFICAS/placeholder.png">
                                 </div>
-                                <div class="col-lg-8 p-0">
+                                <div class="col-lg-9 p-0">
                                     <div class="mx-4">
-                                        <h4>{{glos.data.title}}</h4>
+                                        <h4 class="text-left">{{glos.data.title}}</h4>
                                         <p>{{glos.data.descripcion}}</p>
                                     </div>
                                 </div>
