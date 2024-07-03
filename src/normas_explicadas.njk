@@ -45,9 +45,19 @@ permalink: normas-explicadas/index.html
                                 <div class="col-lg-9 p-0">
                                     <div class="mx-4">
                                         <h4 class="text-left">{{normas.data.title}}</h4>
-                                        <p><strong>¿Qué es?:</strong>{{normas.data.descripcion}}</p>
-                                        <p><strong>¿Para qué sirve?:</strong>{{normas.data.paraque}}</p>
-                                        <p><strong>¿Quiénes tienen la obligación?:</strong>{{normas.data.quienes}}</p>
+                                        <p class="text-justify mt-4"><strong>¿Qué es? </strong></p>
+                                        <ul style="margin-left: 15px;">
+                                            <li class="text-justify" style="list-style: disc;">{{normas.data.descripcion}}</li>
+                                        </ul>
+                                        <p class="text-justify mt-4"><strong>¿Para qué sirve? </strong></p>
+                                        <ul style="margin-left: 15px;">
+                                            <li class="text-justify" style="list-style: disc;">{{normas.data.paraque}}</li>
+                                        </ul>
+                                        <p class="text-justify mt-4"><strong>¿Quiénes tienen la obligación? </strong></p>
+                                        <ul style="margin-left: 15px;">
+                                            <li class="text-justify" style="list-style: disc;">{{normas.data.quienes}}</li>
+                                        </ul>
+                                        <a class="btn mt-4" href="{{normas.data.referencia}}">Norma</a>
                                     </div>
                                 </div>
                             </div>

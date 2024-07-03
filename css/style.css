@@ -17126,3 +17126,21 @@ label.checkbox { padding-left: 20px; }
 	border-radius: 10px;
 	padding: 5%;
 }
+
+.tabla-acceso{
+	width: 100%;
+	margin: 2rem 0;
+}
+
+.tabla-acceso tr{
+	border: #ccc 1px solid;
+}
+
+.tabla-acceso tr th{
+	padding: 20px 25px;
+	background-color: #ddd;
+}
+
+.tabla-acceso tr td{
+	padding: 10px 25px;
+}
