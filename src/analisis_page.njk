@@ -47,12 +47,17 @@ permalink: "/analisis_page/index.html"
                             <label for="formFile" class="form-label">Selecciona tu archivo</label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-                        <button type="button" class="btn btn-primary" onclick="analyzePDF()">Analiza tu Archivo <i class="fa-solid fa-upload"></i></button>
+                        <button type="button" class="btn btn-primary" onclick="showLoader()">Analiza tu Archivo <i class="fa-solid fa-upload"></i></button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div id="loader" style="display:none; text-align:center;">
+    <img src="/ELEMENTOS/loader.gif" alt="Cargando...">
+    <p>Cargando, por favor espera...</p>
 </div>
 
 <div class=" m-0" style="background-color: #fff;"> 
@@ -109,7 +114,6 @@ permalink: "/analisis_page/index.html"
         </div>
     </div>
 </div>
-
 
 <div class=" m-0" style="background-color: #fff;"> 
     <div class="container">
@@ -205,6 +209,15 @@ permalink: "/analisis_page/index.html"
 
 {% block body_javascripts %}
 <script>
+    function showLoader() {
+        document.getElementById('uploadForm').style.display = 'none';
+        document.getElementById('loader').style.display = 'block';
+        
+        setTimeout(function() {
+            analyzePDF();
+        }, 3000);
+    }
+
     async function analyzePDF() {
         const fileInput = document.getElementById('formFile');
         const file = fileInput.files[0];
@@ -214,6 +227,7 @@ permalink: "/analisis_page/index.html"
         }
 
         const fileName = file.name;
+        document.getElementById('loader').style.display = 'none';
 
         const reader = new FileReader();
         reader.onload = function() {
