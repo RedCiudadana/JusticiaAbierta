@@ -17144,3 +17144,12 @@ label.checkbox { padding-left: 20px; }
 .tabla-acceso tr td{
 	padding: 10px 25px;
 }
+
+.tabla-acceso tr td a{
+	color: #006be3;
+	transition: 0.5s all ease;
+}
+
+.tabla-acceso tr td a:hover{
+	color: #0000E6;
+}
