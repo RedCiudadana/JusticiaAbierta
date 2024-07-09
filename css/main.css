@@ -6800,7 +6800,15 @@ padding: 10px;
 }
 
 .listv2 li{
-  list-style: circle;
+  list-style: circle!important;
+}
+
+.listv3{
+  margin-left: 15px;
+}
+
+.listv3 li{
+  list-style: disc;
 }
 
 .img-cc{
