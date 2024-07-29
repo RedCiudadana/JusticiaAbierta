@@ -6826,3 +6826,46 @@ padding: 10px;
 .my-6 {
   margin-bottom: 4rem !important;
 }
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fname {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+input[type="submit"] {
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 10px; /* Optional: for spacing between input fields */
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border-bottom: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
