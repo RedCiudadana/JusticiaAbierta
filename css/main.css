@@ -6956,4 +6956,17 @@ tbody tr{
   .justify-content-end-custom{
     justify-content: start!important;
   }
+
+  .table-header{
+    display: none;
+  }
+
+  .no-expediente{
+    justify-content: center!important;
+  }
+
+  .criterios{
+    justify-content: center!important;
+    text-align: center;
+  }
 }
