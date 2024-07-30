@@ -6925,3 +6925,15 @@ tbody tr{
   padding: 10px;
   text-align: center;
 }
+
+@media only screen and (max-width: 960px) {
+  .img_especial {
+      display: none;
+  }
+  .table-row{
+    display: block!important;
+  }
+  .justify-content-end-custom{
+    justify-content: start!important;
+  }
+}
