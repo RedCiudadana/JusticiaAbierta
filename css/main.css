@@ -6846,6 +6846,14 @@ input[type="submit"] {
   box-sizing: border-box;
   margin-left: 10px; /* Optional: for spacing between input fields */
   margin: 20px 0;
+  background-color: #fff;
+  border: 2px solid #bbb;
+  transition: 0.5s all ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #bbb;
+  border: 2px solid #bbb;
 }
 
 table {
@@ -6853,23 +6861,67 @@ table {
   border-collapse: collapse;
 }
 
-table, th, td {
-  border-bottom: 1px solid #ccc;
-}
-
 th, td {
   padding: 10px;
   text-align: center;
 }
 
-th {
-  background-color: #f2f2f2;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
+tbody tr{
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .btn-red{
   background-color: #ff5545;
+}
+
+.cuadro_final{
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 40px 20px;
+  text-align: center;
+  transition: 0.5s all ease;
+}
+
+.cuadro_final:hover{
+  transform: translate(3px,3px);
+}
+
+.table-container {
+  width: 100%;
+}
+
+.table-row {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 15px;
+  text-align: start;
+  display: flex;
+}
+
+.table-cell img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Estilos para el encabezado de la "tabla" */
+.table-header {
+  display: flex;
+  border-radius: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.table-header .table-cell {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
 }

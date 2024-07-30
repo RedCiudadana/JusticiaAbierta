@@ -47,4 +47,9 @@ module.exports = function (eleventyConfig) {
         return moment(date).format(format);
     });
 
+
+    eleventyConfig.addCollection("expedientes", function(collectionApi) {
+        return collectionApi.getAll().filter(item => item.inputPath.startsWith('./src/expedientes/'));
+    });
+
 }
