@@ -55,7 +55,7 @@ permalink: Congreso-Derecho-Laboral-2024/index.html
                             <div class="table-cell"><img src="/ELEMENTOS/criterios/JA-31.png">No. de Expediente</div>
                             <div class="table-cell"><img src="/ELEMENTOS/criterios/JA-32.png">Criterios y Jurisprudencia</div>
                             <div class="table-cell justify-content-center">PDF</div>
-                            <div class="table-cell justify-content-center">WORD</div>
+                            
                         </div>
                         <div class="table-body">
                             {% for expediente in expedientes %}
@@ -68,9 +68,7 @@ permalink: Congreso-Derecho-Laboral-2024/index.html
                                 <div class="table-cell" style="display:block;text-align:center">
                                     <a target="_blank" href="{{ expediente.pdf }}" class="btn2 btn-blue">Descarga (PDF) <i class="fa-solid fa-arrow-down"></i></a>
                                 </div>
-                                <div class="table-cell" style="display:block;text-align:center">
-                                    <a target="_blank" href="{{ expediente.word }}" class="btn2">Descarga (WORD) <i class="fa-solid fa-arrow-down"></i></a>
-                                </div>
+                            
                             </div>  
                             {% endfor %}
                         </div>
