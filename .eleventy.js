@@ -52,4 +52,17 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getAll().filter(item => item.inputPath.startsWith('./src/expedientes/'));
     });
 
+     // Filtro único para obtener valores únicos de una colección
+    eleventyConfig.addFilter("unique", function(array, key) {
+        const uniqueItems = new Set();
+        return array.filter(item => {
+        const keyValue = item[key];
+        if (!uniqueItems.has(keyValue)) {
+            uniqueItems.add(keyValue);
+            return true;
+        }
+        return false;
+        });
+    });
+
 }

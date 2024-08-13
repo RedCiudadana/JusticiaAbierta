@@ -2870,6 +2870,7 @@ label {
   color: #748188;
   font-weight: 400; }
 
+
 .widget-case-post li {
   margin-bottom: 40px; }
   .widget-case-post li:last-child {
@@ -6969,4 +6970,61 @@ tbody tr{
     justify-content: center!important;
     text-align: center;
   }
+}
+
+/* Estilos para el formulario de búsqueda */
+#searchForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los elementos */
+  width: 100%;
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+#searchForm select,
+#searchForm input[type="text"],
+#searchForm input[type="submit"],
+#searchForm button {
+  width: 100%;
+  padding: 10px; /* Espacio interno para los elementos */
+  font-size: 16px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+#searchForm input[type="submit"],
+#searchForm button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#searchForm input[type="submit"]:hover,
+#searchForm button:hover {
+  background-color: #0056b3;
+}
+
+#searchForm select {
+  appearance: none;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2216%22 height%3D%2216%22 fill%3D%22%23000000%22 class%3D%22bi bi-caret-down-fill%22 viewBox%3D%220 0 16 16%22%3E%3Cpath d%3D%22M7.247 11.14 2.451 6.344c-.566-.566-.01-1.536.707-1.536h9.684c.718 0 1.273.97.707 1.536L8.753 11.14a1 1 0 0 1-1.506 0z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px; /* Espacio para la flecha */
+}
+
+#searchForm input[type="text"] {
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+}
+
+/* Estilo opcional para añadir bordes redondeados */
+#searchForm select,
+#searchForm input[type="text"],
+#searchForm input[type="submit"],
+#searchForm button {
+  border-radius: 5px;
 }
