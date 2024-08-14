@@ -95,7 +95,11 @@ permalink: Congreso-Derecho-Laboral-2024/index.html
                             {% for expediente in expedientes %}
                             <div class="table-row" id="row-{{ expediente.no_expediente }}">
                                 <div class="table-cell justify-content-center" style="flex:1">
+                                    {% if expediente.tema == "6. Jurisprudencia de la Corte Interamericana" %}
+                                    <img style="height:50px; margin-right: 5px;" src="/ELEMENTOS/logointer.png" alt="Logo Congreso"/>
+                                    {% else %}
                                     <img style="height:50px; margin-right: 5px;" src="/ELEMENTOS/logocongreso.png" alt="Logo Congreso"/>
+                                    {% endif %}
                                     {{ expediente.institucion }}
                                 </div>
                                 <div class="table-cell criterios">{{ expediente.tema }}</div>
