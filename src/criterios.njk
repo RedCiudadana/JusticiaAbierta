@@ -30,11 +30,12 @@ permalink: Congreso-Derecho-Laboral-2024/index.html
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12 text-center">
-                    <h5>Búsqueda de Expediente</h5> 
+                    <h5>Explora expedientes emblemáticos en la Jurisprudencia del Derecho Laboral</h5>
+                    <h5>Contamos con  expedientes</h5> 
                     
                     <form id="searchForm">
                         <div class="row">
-                            <div class="col-lg-6 my-4">
+                            <div class="col-lg-6 my-2">
                                 <select id="tema">
                                     <option value="">Todos los Temas</option>
                                     {% for expediente in expedientes | unique('tema') %}
@@ -42,13 +43,13 @@ permalink: Congreso-Derecho-Laboral-2024/index.html
                                     {% endfor %}
                                 </select>
                             </div>
-                            <div class="col-lg-6 my-4">
+                            <div class="col-lg-6 my-2">
                                 <select id="criterios">
                                     <option value="">Todos los Criterios</option>
                                     <!-- Este select se actualizará dinámicamente -->
                                 </select>
                             </div>
-                            <div class="col-lg-12 my-4">
+                            <div class="col-lg-12 my-2">
                                 <select id="institucion">
                                     <option value="">Todas las Instituciones</option>
                                     {% for expediente in expedientes | unique('institucion') %}
@@ -57,14 +58,14 @@ permalink: Congreso-Derecho-Laboral-2024/index.html
                                 </select>
                             </div>
 
-                            <div class="col-lg-8 my-4">
+                            <div class="col-lg-8 my-2">
                                 <input type="text" id="fname" name="fname" placeholder="Buscar por número de expediente...">
                             </div>
-                            <div class="col-lg-4 my-4">
+                            <div class="col-lg-4 my-2">
                                 <input type="submit" value="Buscar">
                             </div>
 
-                            <div class="col-lg-4 my-4">
+                            <div class="col-lg-4 my-2">
                                 <button type="button" id="resetFilters">Limpiar Filtros</button>
                             </div>
                         </div>           
