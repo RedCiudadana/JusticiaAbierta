@@ -6874,15 +6874,15 @@ tbody tr{
 }
 
 .btn-blue{
-  background-color: #016be3;
+  background-color: #5f87e6;
 }
 
 .btn-blue::before{
-  background-color: #13ca92;
+  background-color: #134760;
 }
 
 .btn-blue:hover{
-  background-color: #13ca92;
+  background-color: #134760;
 }
 
 .cuadro_final{
@@ -6993,7 +6993,7 @@ tbody tr{
 
 #searchForm input[type="submit"],
 #searchForm button {
-  background-color: #007bff;
+  background-color: #5f87e6;
   color: white;
   border: none;
   cursor: pointer;
@@ -7002,7 +7002,7 @@ tbody tr{
 
 #searchForm input[type="submit"]:hover,
 #searchForm button:hover {
-  background-color: #0056b3;
+  background-color: #134760;
 }
 
 #searchForm select {
